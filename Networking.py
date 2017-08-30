@@ -1,7 +1,7 @@
 try:
    import os,pickle,sys,pickle,gzip,logging,time
 except ImportError as e:
-   print("Importing Failed, Make sure the Requirements are met. Program exiting",e)
+   print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
 finally:
     try:
@@ -80,11 +80,24 @@ class Network():
     	finally:
     		if nf:
     			logging.info("Deompressed Size is: "+str(self.sz())+"MB")
+    #write file to disk with a supplied name
+    def write(self,name):
+        nf=True
+        logging.info("Attempt to write file")
+        try:
+            with open(name,'wb') as outfile:
+                outfile.write(self.stuff)
+        except IOError as e:
+            nf=False
+            logging.error("Cannot write file to disk.")
+            logging.exception(e)
+        finally:
+            if nf:
+                logging.info("File written witten with size: "+str(self.sz()))
+            outfile.close()
 
 if __name__=="__main__":
-	fl1=Network("12.12.12.12",9876,"1.mp4")
+	fl1=Network("12.12.12.12",9876,"1.pdf")
 	fl1.open()            
-	fl1.compress()
 	fl1.tobytes()
-	fl1.frombytes()
-	fl1.decompress()
+	fl1.write("2.bytes")
