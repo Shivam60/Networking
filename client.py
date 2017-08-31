@@ -8,11 +8,17 @@ print("The Server Socket is now being binded to host: %s and port: %d "%(host,po
 sock.connect((host,port))
 print("Opening large file: ")
 infile=open("2.bytes",'rb')
-print("Reading large file: ")
-infile=infile.read()
+#print("Reading large file: ")
+#infile=infile.read()
 print("Sending large file: ")
 st=time.time()
-sock.sendall(infile)
+offset=0
+while True:
+	sent=sendfile(sock.fileno(),infile.fileno(),offset,os.path.getsize("2.bytes"))
+	if sent==0:
+		break
+	offset+=sent
+#sock.sendall(infile)
 et=time.time()
 print("Total time to send the required file: "+str(et-st))
 print("Closing Socket")
