@@ -6,7 +6,7 @@ except ImportError as e:
 finally:
     try:
         logging.stream=sys.stdout
-        logging.basicConfig(filename='log'+time.strftime("%m%d%s")+'.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
+        logging.basicConfig(filemode='w',filename='log'+'.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
         logging.getLogger().addHandler(logging.StreamHandler())
     except ValueError as e:
         logging.info("Cannot Create log files: Program Exiting.\nError: ")
@@ -15,10 +15,8 @@ finally:
     finally:
         logging.info("Loggers set, imports completed")
 class Network():
-    def __init__(self,ip,port,path):
+    def __init__(self,path):
         logging.info("Initalizing Attributes")
-        self.port=port
-        self.ip=ip
         self.path=path
         self.stuff=None
         logging.info("Attributes Initialized")
@@ -93,11 +91,11 @@ class Network():
             logging.exception(e)
         finally:
             if nf:
-                logging.info("File written witten with size: "+str(self.sz()))
+                logging.info("File written witten with size: "+str(self.sz())+" MB")
             outfile.close()
 
 if __name__=="__main__":
-	fl1=Network("12.12.12.12",9876,"1.pdf")
+	fl1=Network("1.zip")
 	fl1.open()            
 	fl1.tobytes()
 	fl1.write("2.bytes")
