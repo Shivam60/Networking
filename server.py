@@ -30,13 +30,26 @@ class server():
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     #to connect to a host and port and listen for connections
+    def connect_client(self):
+        nf=False
+        try:
+            logging.info("connecting the Socket to server on port: ")
+            self.sock.connect((self.host,self.port))
+        except socket.error as e:
+            logging.error("Cannot connect the socket to server %s on Port %s: \n" %(self.host,self.port))
+            logging.error(e)
+            nf=True
+        finally:
+            if nf:
+                os._exit(0)
+            logging.info("The Client Socket has been connected to server: %s on port: %d "%(self.host,self.port))
     def connect(self):
         nf=False
         try:
             logging.info("Binding the Socket to host and Port: ")
             self.sock.bind((self.host,self.port))
         except socket.error as e:
-            logging.error("Cannot Bind the socket to Host % and Port %: \n" %(self.host,self.port))
+            logging.error("Cannot Bind the socket to Host %s and Port %d \n" %(self.host,self.port))
             logging.error(e)
             nf=True
         finally:
@@ -66,6 +79,16 @@ class server():
             print("Closing Socket")
             conn.close()
             i+=1
+    def handshake(self):
+        self.connect()
+        conn,addr=self.sock.accept()
+        hand=''        
+        data=conn.recv(self.packetsize)
+        print(data)
+        self.sock.send(data)
+        self.sock.close()
 if __name__=="__main__":
-    serv=server(host='192.168.43.9',port=10001,lm=1,packetsize=65536)
-    serv.start()
+#    192.168.43.9
+    serv=server(host='localhost',port=10001,lm=2,packetsize=65536)
+    serv.handshake()
+    #serv.start()

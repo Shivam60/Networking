@@ -1,5 +1,5 @@
 try:
-   import os,pickle,sys,pickle,gzip,logging,time
+   import os,pickle,sys,pickle,gzip,logging,time,subprocess
 except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
@@ -93,9 +93,41 @@ class Network():
             if nf:
                 logging.info("File written witten with size: "+str(self.sz())+" MB")
             outfile.close()
-
+    def split(self, chunk):        
+        try:
+            logging.info("Creating Directory")
+            p=subprocess.run(['mkdir','split'])
+            logging.info("Spliting the Files into %s parts: " %chunk)
+            p=subprocess.run(['split','-b',chunk,self.path,os.getcwd()+r'/split/'+'part_'])
+        except subprocess.CalledProcessError as err::
+            logging.error("Cannot Split the file. Program Exit."+str(p))
+            os._exit(0)
+        finally:
+            logging.info("Files split Succesfully")
+    def file_no(self):
+        nf=True
+        try:
+            logging.info("Entering Directory to count number of files ")
+            os.chdir(os.getcwd()+'/split')
+        except:
+            nf=False
+            logging.error('Cannot enter into Directory.')
+        finally:
+            if nf:
+                return len(os.lisdir())
+    def crc(self):
+        nf=True
+        try:
+            logging.info("Attempting to Find Check Sum of stuff: ")
+            p=subprocess.run(['cksum',''],stdout=subprocess.PIPE)
+        except subprocess.CalledProcessError as err:
+            nf=False
+            logging.error('Error at finding Check Sum of file. \n'+err)
+        finally:
+            if nf:
+                return completed.stdout.decode('utf-8')
 if __name__=="__main__":
-	fl1=Network("1.zip")
+	fl1=Network("2.bytes")
 	fl1.open()            
 	fl1.tobytes()
-	fl1.write("2.bytes")
+	fl1.split(chunk='5m')
