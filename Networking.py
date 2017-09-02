@@ -4,16 +4,7 @@ except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
 finally:
-    try:
-        logging.stream=sys.stdout
-        logging.basicConfig(filemode='w',filename='log'+'.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
-        logging.getLogger().addHandler(logging.StreamHandler())
-    except ValueError as e:
-        logging.info("Cannot Create log files: Program Exiting.\nError: ")
-        Logger.exception(e)
-        os._exit(0)
-    finally:
-        logging.info("Loggers set, imports completed")
+    pass
 class Network():
     def __init__(self,path,file):
         logging.info("Initalizing Attributes")
@@ -125,6 +116,7 @@ class Network():
         finally:
             if nf:
                 self.file_no=len(os.listdir())
+                logging.info("Files calulcated.\nExit Directory to count number of files ")
                 os.chdir(t)
     #to calculate the Check sum of the file
     def crc_n(self):
@@ -138,5 +130,6 @@ class Network():
         finally:
             if not nf:
                 return
+            logging.info("Check Sum Found")
             self.crc=p.decode('utf-8')
             

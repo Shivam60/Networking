@@ -17,8 +17,8 @@ finally:
 
 
 
-class server():
-    def __init__(self,host,port,packetsize,lm=1):
+class server(Network):
+    def __init__(self,host,port,packetsize,lm=1,path,filenm):
         logging.info("Initalizing Attributes")
         logging.info("Checking if host and port are avaible: ")        
         self.host=host
@@ -26,6 +26,7 @@ class server():
         self.lm=lm
         self.packetsize=packetsize
         self.recvstuff=None
+        Network.__init__(self,path=path,file=filenm)
         #creating a socket with IP4 config and TCP stream protocol
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

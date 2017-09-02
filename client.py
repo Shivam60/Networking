@@ -1,6 +1,7 @@
 try:
     import socket,sys,time,os,logging
-    from sendfile import sendfile
+  #  from sendfile import sendfile
+    from Networking import Network
 except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
@@ -14,19 +15,15 @@ finally:
         Logger.exception(e)
         os._exit(0)
     finally:
-        
         logging.info("Loggers set, imports completed")
-def gen(file,sz):
-    with open(file,'wb') as outfile:
-        outfile.seek(sz-1)
-        outfile.write(b'\0')
-        outfile.close()
-#from sendfile import sendfile
-class client():
-    def __init__(self,host,port,file,packetsize=65536):
+
+
+class client(Network):
+    def __init__(self,host,port,filenm,path,packetsize=65536):
+        Network.__init__(self,path=path,file=filenm)
         self.host=host
         self.port=port
-        self.file=file
+#        self.file=filenm
         self.packetsize=packetsize
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     def connect(self):
@@ -106,8 +103,8 @@ class client():
         
 if __name__=="__main__":
     #gen("asv.bytes",1024*1024*1024)
-    clin=client(host='localhost',port=10001,file='2.bytes')
-    clin.handshake(crc='123',file_no=123)
+    clin=client(host='localhost',port=10001,filenm='2.bytes',path=os.getcwd())
+    #clin.handshake(crc='123',file_no=123)
     '''
     os.chdir(os.getcwd()+r'/split')
     for file in os.listdir():        
