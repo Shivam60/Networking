@@ -1,5 +1,6 @@
 try:
     import socket,sys,time,os,logging
+    from Networking import Network
 except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
@@ -18,9 +19,9 @@ finally:
 
 
 class server(Network):
-    def __init__(self,host,port,packetsize,lm=1,path,filenm):
+    def __init__(self,host,port,packetsize,path,filenm,lm=1):
         logging.info("Initalizing Attributes")
-        logging.info("Checking if host and port are avaible: ")        
+        logging.info("Checking if host and port are available: ")        
         self.host=host
         self.port=port
         self.lm=lm
@@ -81,15 +82,21 @@ class server(Network):
             conn.close()
             i+=1
     def handshake(self):
+        logging.info("Connecting...")
         self.connect()
-        conn,addr=self.sock.accept()
-        hand=''        
+        logging.info("Connection recieved.")        
+        conn,addr=self.sock.accept()    
+        logging.info("Waiting for handshake reply.")  
         data=conn.recv(self.packetsize)
-        print(data)
-        self.sock.send(data)
+        logging.info("Handshake reply recieved.") 
+        self.crc,self.file_no=self.find_crc_fno(data)
+        logging.info("Sending handshake back") 
+        conn.send((self.crc+'/\\'+str(self.file_no)+'/\\').encode('utf-8'))
+        logging.info("Handshake back sent")
         self.sock.close()
 if __name__=="__main__":
 #    192.168.43.9
-    serv=server(host='localhost',port=10001,lm=2,packetsize=65536)
+    serv=server(host='localhost',port=10001,lm=2,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
     serv.handshake()
+    serv.sock.close()
     #serv.start()

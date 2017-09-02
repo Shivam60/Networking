@@ -7,13 +7,13 @@ finally:
     pass
 class Network():
     def __init__(self,path,file):
-        logging.info("Initalizing Attributes")
+        logging.info("Initalizing Attributes(Network)")
         self.path=path+r'/'
         self.file=file
         self.stuff=None
         self.crc=None
         self.file_no=None
-        logging.info("Attributes Initialized")
+        logging.info("Attributes Initialized(Network)")
     #open the file to send.
     def open(self): 
     	try:
@@ -119,7 +119,7 @@ class Network():
                 logging.info("Files calulcated.\nExit Directory to count number of files ")
                 os.chdir(t)
     #to calculate the Check sum of the file
-    def crc_n(self):
+    def crc_n(self):W
         nf=True
         try:
             logging.info("Attempting to Find Check Sum of stuff: ")
@@ -131,5 +131,15 @@ class Network():
             if not nf:
                 return
             logging.info("Check Sum Found")
-            self.crc=p.decode('utf-8')
-            
+            op=p.decode('utf-8').split(' ')
+            op=op[0]+' '+op[1]
+            self.crc=''.join(op)
+    #to find crc and file number from handhsake
+    def find_crc_fno(self,data):
+        logging.info('Decoding data for CRC and File Numbers')
+        data=data.decode('utf-8').split('/\\')
+        file_no=int(data[1])
+        data=data[0].split(' ')
+        crc=data[0]+' '+data[1]
+        logging.info('Data decoded for CRC and File Numbers')
+        return crc,file_no    

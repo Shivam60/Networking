@@ -87,24 +87,36 @@ class client(Network):
         logging.info("Sending Speed: "+str((sys.getsizeof(data)/1024**2)/(et-st))+" MBPS")
         logging.info("Closing Socket")
         self.sock.close()
-    def handshake(self,crc,file_no):
-        #split
-        #crc
-        #file_no
+    def handshake(self):
+        logging.info("Connectin...")
         self.connect()
         logging.info("Sending CRC and number of files to server")
-        self.sock.send((crc+'/\\'+str(file_no)+'/\\').encode('utf-8'))
+        self.sock.send((self.crc+'/\\'+str(self.file_no)+'/\\').encode('utf-8'))
         logging.info("CRC and Number of files sent.")
+        logging.info("Waiting for handshake reply.")
         data=self.sock.recv(1024)
-        while not data:
-            data=self.sock.recv(1024)
-        print(data)        
+        crc,fno=self.find_crc_fno(data)
+        logging.info("Handshake reply recieved.")        
+        if crc==self.crc and fno==self.file_no:
+            logging.info("Handshake Complete")
+            return True
+        else:
+            logging.info("Handshake Incomplete")
+            logging.info("Recieved: \nCRC: "+str(crc)+"\nFile Numbers: "+str(fno))
+            logging.info("Actual: \nCRC: "+str(self.crc)+"\nFile Numbers: "+str(self.file_no))
+            return False
         self.sock.close()
         
 if __name__=="__main__":
     #gen("asv.bytes",1024*1024*1024)
     clin=client(host='localhost',port=10001,filenm='2.bytes',path=os.getcwd())
-    #clin.handshake(crc='123',file_no=123)
+    clin.open()
+    clin.tobytes()
+    clin.crc_n()
+    clin.split(chunk='5m')
+    clin.file_n()
+    clin.handshake()
+    clin.sock.close()
     '''
     os.chdir(os.getcwd()+r'/split')
     for file in os.listdir():        

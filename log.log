@@ -1,26 +1,27 @@
-client INFO MainThread 2017-09-02 19:34:57,927 Loggers set, imports completed
-Networking INFO MainThread 2017-09-02 19:34:57,928 Initalizing Attributes
-Networking INFO MainThread 2017-09-02 19:34:57,928 Attributes Initialized
-Networking INFO MainThread 2017-09-02 19:35:04,613 Compressing Stuff
-Networking ERROR MainThread 2017-09-02 19:35:04,615 Compression Failed
-Traceback (most recent call last):
-  File "/home/shivam/Work/Projects/TCP/Networking.py", line 55, in compress
-    self.stuff=gzip.compress(self.stuff)
-  File "/home/shivam/anaconda3/lib/python3.6/gzip.py", line 524, in compress
-    f.write(data)
-  File "/home/shivam/anaconda3/lib/python3.6/gzip.py", line 260, in write
-    data = memoryview(data)
-TypeError: memoryview: a bytes-like object is required, not 'NoneType'
-Networking INFO MainThread 2017-09-02 19:35:10,114 Opening File
-Networking INFO MainThread 2017-09-02 19:35:10,114 Reading File
-Networking INFO MainThread 2017-09-02 19:35:10,136 Calculating Size of Stuff
-Networking INFO MainThread 2017-09-02 19:35:10,137 File read with the size of: 32.167232513427734 MB
-Networking INFO MainThread 2017-09-02 19:35:10,137 Closing File
-Networking INFO MainThread 2017-09-02 19:35:12,359 Compressing Stuff
-Networking INFO MainThread 2017-09-02 19:35:14,009 Calculating Size of Stuff
-Networking INFO MainThread 2017-09-02 19:35:14,009 Compressed Size is: 32.17447853088379 MB
-Networking INFO MainThread 2017-09-02 19:35:21,480 Attempting to Find Check Sum of stuff: 
-Networking INFO MainThread 2017-09-02 19:35:21,682 Check Sum Found
-Networking INFO MainThread 2017-09-02 19:35:29,746 Entering Directory to count number of files 
-Networking INFO MainThread 2017-09-02 19:35:29,746 Files calulcated.
+client INFO MainThread 2017-09-02 20:25:03,638 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 20:25:03,639 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 20:25:03,639 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 20:25:03,639 Opening File
+Networking INFO MainThread 2017-09-02 20:25:03,639 Reading File
+Networking INFO MainThread 2017-09-02 20:25:03,662 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 20:25:03,662 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 20:25:03,663 Closing File
+Networking INFO MainThread 2017-09-02 20:25:03,686 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 20:25:03,686 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 20:25:03,854 Check Sum Found
+Networking INFO MainThread 2017-09-02 20:25:03,855 Creating Directory
+Networking INFO MainThread 2017-09-02 20:25:03,858 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 20:25:04,412 Files split Succesfully
+Networking INFO MainThread 2017-09-02 20:25:04,413 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 20:25:04,413 Files calulcated.
 Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 20:25:04,413 Connectin...
+client INFO MainThread 2017-09-02 20:25:04,413 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 20:25:04,414 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 20:25:04,414 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 20:25:04,414 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 20:25:04,414 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 20:25:04,415 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 20:25:04,415 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 20:25:04,415 Handshake reply recieved.
+client INFO MainThread 2017-09-02 20:25:04,415 Handshake Complete
