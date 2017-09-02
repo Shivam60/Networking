@@ -15,15 +15,19 @@ finally:
     finally:
         logging.info("Loggers set, imports completed")
 class Network():
-    def __init__(self,path):
+    def __init__(self,path,file):
         logging.info("Initalizing Attributes")
-        self.path=path
+        self.path=path+r'/'
+        self.file=file
         self.stuff=None
+        self.crc=None
+        self.file_no=None
         logging.info("Attributes Initialized")
-    def open(self): #open the file to send.
+    #open the file to send.
+    def open(self): 
     	try:
     		logging.info("Opening File")        
-    		with open(self.path,'rb') as infile:
+    		with open(self.path+self.file,'rb') as infile:
     			logging.info("Reading File")
     			self.stuff=infile.read()
     	except IOError as e:
@@ -33,7 +37,8 @@ class Network():
     		logging.info("File read with the size of: "+str(self.sz())+" MB")
     		infile.close()
     		logging.info("Closing File")
-    def tobytes(self): #returns serialized item passed in as a parameter
+    #returns serialized item passed in as a parameter
+    def tobytes(self): 
     	try:
     		self.stuff=pickle.dumps(self.stuff)
     	except pickle.PicklingError as e:
@@ -41,7 +46,8 @@ class Network():
     		logging.exception(e)
     	finally:
         	print("Cpickle has Serialized: "+str(self.sz())+ " MB")
-    def frombytes(self): #returns deserialized item passed in as a parameter
+    #returns deserialized item passed in as a parameter
+    def frombytes(self): 
         try:
             logging.info("Serializing stuff")
             self.stuff=pickle.loads(self.stuff)
@@ -93,41 +99,44 @@ class Network():
             if nf:
                 logging.info("File written witten with size: "+str(self.sz())+" MB")
             outfile.close()
+    #to Split the file into small chunks
     def split(self, chunk):        
         try:
             logging.info("Creating Directory")
             p=subprocess.run(['mkdir','split'])
             logging.info("Spliting the Files into %s parts: " %chunk)
-            p=subprocess.run(['split','-b',chunk,self.path,os.getcwd()+r'/split/'+'part_'])
-        except subprocess.CalledProcessError as err::
+            p=subprocess.run(['split','-b',chunk,self.path+self.file,os.getcwd()+r'/split/'+'part_'])
+        except subprocess.CalledProcessError as err:
             logging.error("Cannot Split the file. Program Exit."+str(p))
             os._exit(0)
         finally:
             logging.info("Files split Succesfully")
-    def file_no(self):
+    #to calculate the number of files splited
+    def file_n(self):
         nf=True
+        t=os.getcwd()
+        print(t)
         try:
             logging.info("Entering Directory to count number of files ")
-            os.chdir(os.getcwd()+'/split')
+            os.chdir(t+'/split')            
         except:
             nf=False
             logging.error('Cannot enter into Directory.')
         finally:
             if nf:
-                return len(os.lisdir())
-    def crc(self):
+                self.file_no=len(os.listdir())
+                os.chdir(t)
+    #to calculate the Check sum of the file
+    def crc_n(self):
         nf=True
         try:
             logging.info("Attempting to Find Check Sum of stuff: ")
-            p=subprocess.run(['cksum',''],stdout=subprocess.PIPE)
+            p=subprocess.check_output(['cksum',self.file])
         except subprocess.CalledProcessError as err:
             nf=False
             logging.error('Error at finding Check Sum of file. \n'+err)
         finally:
-            if nf:
-                return completed.stdout.decode('utf-8')
-if __name__=="__main__":
-	fl1=Network("2.bytes")
-	fl1.open()            
-	fl1.tobytes()
-	fl1.split(chunk='5m')
+            if not nf:
+                return
+            self.crc=p.decode('utf-8')
+            

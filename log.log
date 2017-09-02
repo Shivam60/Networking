@@ -1,5 +1,4 @@
-client INFO MainThread 2017-09-02 03:15:39,821 Loggers set, imports completed
-client INFO MainThread 2017-09-02 03:15:39,821 connecting the Socket to server on port: 
-client INFO MainThread 2017-09-02 03:15:39,822 The Client Socket has been connected to server: localhost on port: 10001 
-client INFO MainThread 2017-09-02 03:15:39,822 Sending CRC and number of files to server
-client INFO MainThread 2017-09-02 03:15:39,822 CRC and Number of files sent.
+Networking INFO MainThread 2017-09-02 15:01:36,239 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 15:01:58,493 Initalizing Attributes
+Networking INFO MainThread 2017-09-02 15:01:58,494 Attributes Initialized
+Networking INFO MainThread 2017-09-02 15:02:02,103 Attempting to Find Check Sum of stuff: 
