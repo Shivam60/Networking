@@ -1,27 +1,2369 @@
-client INFO MainThread 2017-09-02 20:25:03,638 Loggers set, imports completed
-Networking INFO MainThread 2017-09-02 20:25:03,639 Initalizing Attributes(Network)
-Networking INFO MainThread 2017-09-02 20:25:03,639 Attributes Initialized(Network)
-Networking INFO MainThread 2017-09-02 20:25:03,639 Opening File
-Networking INFO MainThread 2017-09-02 20:25:03,639 Reading File
-Networking INFO MainThread 2017-09-02 20:25:03,662 Calculating Size of Stuff
-Networking INFO MainThread 2017-09-02 20:25:03,662 File read with the size of: 32.167232513427734 MB
-Networking INFO MainThread 2017-09-02 20:25:03,663 Closing File
-Networking INFO MainThread 2017-09-02 20:25:03,686 Calculating Size of Stuff
-Networking INFO MainThread 2017-09-02 20:25:03,686 Attempting to Find Check Sum of stuff: 
-Networking INFO MainThread 2017-09-02 20:25:03,854 Check Sum Found
-Networking INFO MainThread 2017-09-02 20:25:03,855 Creating Directory
-Networking INFO MainThread 2017-09-02 20:25:03,858 Spliting the Files into 5m parts: 
-Networking INFO MainThread 2017-09-02 20:25:04,412 Files split Succesfully
-Networking INFO MainThread 2017-09-02 20:25:04,413 Entering Directory to count number of files 
-Networking INFO MainThread 2017-09-02 20:25:04,413 Files calulcated.
+server INFO MainThread 2017-09-02 21:36:47,651 Loggers set, imports completed
+server INFO MainThread 2017-09-02 21:36:47,651 Initalizing Attributes
+server INFO MainThread 2017-09-02 21:36:47,651 Checking if host and port are available: 
+Networking INFO MainThread 2017-09-02 21:36:47,652 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:47,652 Attributes Initialized(Network)
+server INFO MainThread 2017-09-02 21:36:47,652 Connecting...
+server INFO MainThread 2017-09-02 21:36:47,652 Binding the Socket to host and Port: 
+server INFO MainThread 2017-09-02 21:36:47,652 The Server Socket is now being binded to host: localhost and port: 10001 
+server INFO MainThread 2017-09-02 21:36:47,652 Server socket is listing for 1 connections
+server INFO MainThread 2017-09-02 21:36:47,652 Connection recieved.
+client INFO MainThread 2017-09-02 21:36:50,572 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 21:36:50,572 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:50,572 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 21:36:50,573 Opening File
+Networking INFO MainThread 2017-09-02 21:36:50,573 Reading File
+Networking INFO MainThread 2017-09-02 21:36:50,593 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:36:50,593 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 21:36:50,593 Closing File
+Networking INFO MainThread 2017-09-02 21:36:50,614 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:36:50,614 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 21:36:50,779 Check Sum Found
+Networking INFO MainThread 2017-09-02 21:36:50,779 Creating Directory
+Networking INFO MainThread 2017-09-02 21:36:50,782 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 21:36:50,826 Files split Succesfully
+Networking INFO MainThread 2017-09-02 21:36:50,826 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 21:36:50,826 Files calulcated.
 Exit Directory to count number of files 
-client INFO MainThread 2017-09-02 20:25:04,413 Connectin...
-client INFO MainThread 2017-09-02 20:25:04,413 connecting the Socket to server on port: 
-client INFO MainThread 2017-09-02 20:25:04,414 The Client Socket has been connected to server: localhost on port: 10001 
-client INFO MainThread 2017-09-02 20:25:04,414 Sending CRC and number of files to server
-client INFO MainThread 2017-09-02 20:25:04,414 CRC and Number of files sent.
-client INFO MainThread 2017-09-02 20:25:04,414 Waiting for handshake reply.
-Networking INFO MainThread 2017-09-02 20:25:04,415 Decoding data for CRC and File Numbers
-Networking INFO MainThread 2017-09-02 20:25:04,415 Data decoded for CRC and File Numbers
-client INFO MainThread 2017-09-02 20:25:04,415 Handshake reply recieved.
-client INFO MainThread 2017-09-02 20:25:04,415 Handshake Complete
+client INFO MainThread 2017-09-02 21:36:50,826 Connectin...
+client INFO MainThread 2017-09-02 21:36:50,827 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:50,827 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:50,827 Sending CRC and number of files to server
+server INFO MainThread 2017-09-02 21:36:50,827 Waiting for handshake reply.
+client INFO MainThread 2017-09-02 21:36:50,827 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 21:36:50,828 Waiting for handshake reply.
+server INFO MainThread 2017-09-02 21:36:50,828 Handshake reply recieved.
+Networking INFO MainThread 2017-09-02 21:36:50,828 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 21:36:50,828 Data decoded for CRC and File Numbers
+server INFO MainThread 2017-09-02 21:36:50,828 Sending handshake back
+server INFO MainThread 2017-09-02 21:36:50,828 Handshake back sent
+Networking INFO MainThread 2017-09-02 21:36:50,829 Decoding data for CRC and File Numbers
+server INFO MainThread 2017-09-02 21:36:50,829 Making Temprorary Server Directory: 
+Networking INFO MainThread 2017-09-02 21:36:50,829 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 21:36:50,830 Handshake reply recieved.
+client INFO MainThread 2017-09-02 21:36:50,830 Handshake Complete
+server INFO MainThread 2017-09-02 21:36:50,832 Directory made succesfully
+server INFO MainThread 2017-09-02 21:36:50,832 Initalizing Attributes
+server INFO MainThread 2017-09-02 21:36:50,832 Checking if host and port are available: 
+Networking INFO MainThread 2017-09-02 21:36:50,832 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:50,833 Attributes Initialized(Network)
+server INFO MainThread 2017-09-02 21:36:50,833 Binding the Socket to host and Port: 
+server INFO MainThread 2017-09-02 21:36:50,833 The Server Socket is now being binded to host: localhost and port: 10001 
+server INFO MainThread 2017-09-02 21:36:50,833 Server socket is listing for 1 connections
+server INFO MainThread 2017-09-02 21:36:50,833 Waiting for the connection: 
+Networking INFO MainThread 2017-09-02 21:36:51,831 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:51,832 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:51,838 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:51,838 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:51,839 Opening large file: 
+server INFO MainThread 2017-09-02 21:36:51,839 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58886)> and address ('127.0.0.1', 58886)
+client INFO MainThread 2017-09-02 21:36:51,846 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:51,847 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:51,848 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:51,852 Sending Speed: 1042.432249726613 MBPS
+client INFO MainThread 2017-09-02 21:36:51,853 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:51,856 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:51,856 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:51,857 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:51,857 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:51,858 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:51,860 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:51,860 Sending large file: 
+client INFO MainThread 2017-09-02 21:36:51,861 Sending Speed: 3129.098795180723 MBPS
+client INFO MainThread 2017-09-02 21:36:51,861 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:51,861 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:51,861 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:51,861 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:51,862 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:51,862 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:51,865 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:51,865 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:51,989 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:51,989 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58888)> and address ('127.0.0.1', 58888)
+server INFO MainThread 2017-09-02 21:36:51,989 Started Recieving Data: 
+server INFO MainThread 2017-09-02 21:36:52,001 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:52,002 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58890)> and address ('127.0.0.1', 58890)
+server INFO MainThread 2017-09-02 21:36:52,002 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:52,003 Sending Speed: 36.22484929093327 MBPS
+client INFO MainThread 2017-09-02 21:36:52,004 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:52,004 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:52,004 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:52,005 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:52,005 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:52,006 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:52,010 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:52,010 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:52,060 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:52,060 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58892)> and address ('127.0.0.1', 58892)
+server INFO MainThread 2017-09-02 21:36:52,062 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:52,063 Sending Speed: 94.45626393424163 MBPS
+client INFO MainThread 2017-09-02 21:36:52,063 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:52,064 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:52,064 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:52,064 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:52,064 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:52,065 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:52,067 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:52,067 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:52,126 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:52,126 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58894)> and address ('127.0.0.1', 58894)
+server INFO MainThread 2017-09-02 21:36:52,127 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:52,127 Sending Speed: 83.42609595035404 MBPS
+client INFO MainThread 2017-09-02 21:36:52,127 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:52,128 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:52,128 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:52,128 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:52,128 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:52,128 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:52,131 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:52,131 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:52,186 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:52,187 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58896)> and address ('127.0.0.1', 58896)
+server INFO MainThread 2017-09-02 21:36:52,187 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:52,191 Sending Speed: 84.16502590569604 MBPS
+client INFO MainThread 2017-09-02 21:36:52,191 Closing Socket
+Networking INFO MainThread 2017-09-02 21:36:52,192 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:36:52,192 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:36:52,192 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:36:52,192 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:36:52,192 Opening large file: 
+client INFO MainThread 2017-09-02 21:36:52,195 File copied into memory: 
+client INFO MainThread 2017-09-02 21:36:52,195 Sending large file: 
+server INFO MainThread 2017-09-02 21:36:52,252 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:36:52,252 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58898)> and address ('127.0.0.1', 58898)
+server INFO MainThread 2017-09-02 21:36:52,252 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:36:52,256 Sending Speed: 83.50249651602628 MBPS
+client INFO MainThread 2017-09-02 21:36:52,256 Closing Socket
+server INFO MainThread 2017-09-02 21:38:06,791 Loggers set, imports completed
+server INFO MainThread 2017-09-02 21:38:06,791 Initalizing Attributes
+server INFO MainThread 2017-09-02 21:38:06,791 Checking if host and port are available: 
+Networking INFO MainThread 2017-09-02 21:38:06,791 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:06,791 Attributes Initialized(Network)
+server INFO MainThread 2017-09-02 21:38:06,792 Connecting...
+server INFO MainThread 2017-09-02 21:38:06,792 Binding the Socket to host and Port: 
+server INFO MainThread 2017-09-02 21:38:06,792 The Server Socket is now being binded to host: localhost and port: 10001 
+server INFO MainThread 2017-09-02 21:38:06,792 Server socket is listing for 1 connections
+server INFO MainThread 2017-09-02 21:38:06,792 Connection recieved.
+client INFO MainThread 2017-09-02 21:38:09,271 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 21:38:09,271 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:09,271 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 21:38:09,272 Opening File
+Networking INFO MainThread 2017-09-02 21:38:09,272 Reading File
+Networking INFO MainThread 2017-09-02 21:38:09,291 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:38:09,291 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 21:38:09,291 Closing File
+Networking INFO MainThread 2017-09-02 21:38:09,312 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:38:09,312 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 21:38:09,479 Check Sum Found
+Networking INFO MainThread 2017-09-02 21:38:09,480 Creating Directory
+Networking INFO MainThread 2017-09-02 21:38:09,482 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 21:38:09,523 Files split Succesfully
+Networking INFO MainThread 2017-09-02 21:38:09,523 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 21:38:09,523 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 21:38:09,523 Connectin...
+client INFO MainThread 2017-09-02 21:38:09,523 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:09,524 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:09,524 Sending CRC and number of files to server
+server INFO MainThread 2017-09-02 21:38:09,524 Waiting for handshake reply.
+client INFO MainThread 2017-09-02 21:38:09,524 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 21:38:09,524 Waiting for handshake reply.
+server INFO MainThread 2017-09-02 21:38:09,524 Handshake reply recieved.
+Networking INFO MainThread 2017-09-02 21:38:09,524 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 21:38:09,524 Data decoded for CRC and File Numbers
+server INFO MainThread 2017-09-02 21:38:09,524 Sending handshake back
+server INFO MainThread 2017-09-02 21:38:09,525 Handshake back sent
+Networking INFO MainThread 2017-09-02 21:38:09,525 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 21:38:09,525 Data decoded for CRC and File Numbers
+server INFO MainThread 2017-09-02 21:38:09,525 Initalizing Attributes
+server INFO MainThread 2017-09-02 21:38:09,525 Checking if host and port are available: 
+client INFO MainThread 2017-09-02 21:38:09,525 Handshake reply recieved.
+Networking INFO MainThread 2017-09-02 21:38:09,525 Initalizing Attributes(Network)
+client INFO MainThread 2017-09-02 21:38:09,525 Handshake Complete
+Networking INFO MainThread 2017-09-02 21:38:09,525 Attributes Initialized(Network)
+server INFO MainThread 2017-09-02 21:38:09,525 Binding the Socket to host and Port: 
+server INFO MainThread 2017-09-02 21:38:09,526 The Server Socket is now being binded to host: localhost and port: 10001 
+server INFO MainThread 2017-09-02 21:38:09,526 Server socket is listing for 1 connections
+server INFO MainThread 2017-09-02 21:38:09,526 Waiting for the connection: 
+Networking INFO MainThread 2017-09-02 21:38:10,526 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,526 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,529 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,529 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,530 Opening large file: 
+server INFO MainThread 2017-09-02 21:38:10,530 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58906)> and address ('127.0.0.1', 58906)
+client INFO MainThread 2017-09-02 21:38:10,532 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,533 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,533 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,536 Sending Speed: 1937.3350577367205 MBPS
+client INFO MainThread 2017-09-02 21:38:10,536 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,536 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,537 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,537 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,538 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,538 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,542 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,543 Sending large file: 
+client INFO MainThread 2017-09-02 21:38:10,544 Sending Speed: 2478.8742841559856 MBPS
+client INFO MainThread 2017-09-02 21:38:10,544 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,544 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,545 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,545 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,545 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,546 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,552 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,552 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,650 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,650 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58908)> and address ('127.0.0.1', 58908)
+server INFO MainThread 2017-09-02 21:38:10,650 Started Recieving Data: 
+server INFO MainThread 2017-09-02 21:38:10,662 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,662 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58910)> and address ('127.0.0.1', 58910)
+server INFO MainThread 2017-09-02 21:38:10,662 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,663 Sending Speed: 45.09751434856751 MBPS
+client INFO MainThread 2017-09-02 21:38:10,664 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,664 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,664 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,665 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,665 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,666 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,671 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,671 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,723 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,724 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58912)> and address ('127.0.0.1', 58912)
+server INFO MainThread 2017-09-02 21:38:10,725 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,728 Sending Speed: 89.62550856439536 MBPS
+client INFO MainThread 2017-09-02 21:38:10,728 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,728 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,728 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,729 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,729 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,729 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,733 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,734 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,786 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,786 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58914)> and address ('127.0.0.1', 58914)
+server INFO MainThread 2017-09-02 21:38:10,786 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,787 Sending Speed: 95.08710870905728 MBPS
+client INFO MainThread 2017-09-02 21:38:10,787 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,788 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,788 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,788 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,788 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,789 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,791 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,792 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,846 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,847 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58916)> and address ('127.0.0.1', 58916)
+server INFO MainThread 2017-09-02 21:38:10,847 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,849 Sending Speed: 86.90679286566768 MBPS
+client INFO MainThread 2017-09-02 21:38:10,850 Closing Socket
+Networking INFO MainThread 2017-09-02 21:38:10,850 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:38:10,851 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:38:10,851 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:38:10,852 The Client Socket has been connected to server: localhost on port: 10001 
+client INFO MainThread 2017-09-02 21:38:10,852 Opening large file: 
+client INFO MainThread 2017-09-02 21:38:10,855 File copied into memory: 
+client INFO MainThread 2017-09-02 21:38:10,855 Sending large file: 
+server INFO MainThread 2017-09-02 21:38:10,912 Waiting for the connection: 
+server INFO MainThread 2017-09-02 21:38:10,913 Connection Recieved from connection <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 10001), raddr=('127.0.0.1', 58918)> and address ('127.0.0.1', 58918)
+server INFO MainThread 2017-09-02 21:38:10,913 Started Recieving Data: 
+client INFO MainThread 2017-09-02 21:38:10,916 Sending Speed: 82.72057872233003 MBPS
+client INFO MainThread 2017-09-02 21:38:10,916 Closing Socket
+server INFO MainThread 2017-09-02 21:41:10,902 Loggers set, imports completed
+server INFO MainThread 2017-09-02 21:41:10,902 Initalizing Attributes
+server INFO MainThread 2017-09-02 21:41:10,902 Checking if host and port are available: 
+Networking INFO MainThread 2017-09-02 21:41:10,902 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:41:10,902 Attributes Initialized(Network)
+server INFO MainThread 2017-09-02 21:41:10,902 Connecting...
+server INFO MainThread 2017-09-02 21:41:10,903 Binding the Socket to host and Port: 
+server INFO MainThread 2017-09-02 21:41:10,903 The Server Socket is now being binded to host: localhost and port: 10001 
+server INFO MainThread 2017-09-02 21:41:10,903 Server socket is listing for 1 connections
+server INFO MainThread 2017-09-02 21:41:10,903 Connection recieved.
+client INFO MainThread 2017-09-02 21:43:41,095 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 21:43:41,095 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:43:41,095 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 21:43:41,095 Opening File
+Networking INFO MainThread 2017-09-02 21:43:41,095 Reading File
+Networking INFO MainThread 2017-09-02 21:43:41,117 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:43:41,117 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 21:43:41,117 Closing File
+Networking INFO MainThread 2017-09-02 21:43:41,138 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:43:41,138 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 21:43:41,303 Check Sum Found
+Networking INFO MainThread 2017-09-02 21:43:41,303 Creating Directory
+Networking INFO MainThread 2017-09-02 21:43:41,307 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 21:43:41,349 Files split Succesfully
+Networking INFO MainThread 2017-09-02 21:43:41,349 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 21:43:41,349 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 21:43:41,349 Connectin...
+client INFO MainThread 2017-09-02 21:43:41,349 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:43:41,444 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:43:41,445 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 21:43:41,445 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 21:43:41,445 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 21:43:41,452 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 21:43:41,453 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 21:43:41,453 Handshake reply recieved.
+client INFO MainThread 2017-09-02 21:43:41,453 Handshake Complete
+Networking INFO MainThread 2017-09-02 21:43:42,455 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:43:42,456 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:43:42,460 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:43:42,468 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:43:42,468 Opening large file: 
+client INFO MainThread 2017-09-02 21:43:42,472 File copied into memory: 
+client INFO MainThread 2017-09-02 21:43:42,472 Sending large file: 
+client INFO MainThread 2017-09-02 21:43:48,885 Sending Speed: 0.7796440961556685 MBPS
+client INFO MainThread 2017-09-02 21:43:48,886 Closing Socket
+Networking INFO MainThread 2017-09-02 21:43:48,888 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:43:48,889 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:43:48,890 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:43:48,917 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:43:48,917 Opening large file: 
+client INFO MainThread 2017-09-02 21:43:48,920 File copied into memory: 
+client INFO MainThread 2017-09-02 21:43:48,920 Sending large file: 
+client INFO MainThread 2017-09-02 21:43:52,528 Sending Speed: 0.6008293531007478 MBPS
+client INFO MainThread 2017-09-02 21:43:52,528 Closing Socket
+Networking INFO MainThread 2017-09-02 21:43:52,529 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:43:52,529 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:43:52,529 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:43:52,559 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:43:52,560 Opening large file: 
+client INFO MainThread 2017-09-02 21:43:52,566 File copied into memory: 
+client INFO MainThread 2017-09-02 21:43:52,566 Sending large file: 
+client INFO MainThread 2017-09-02 21:43:59,763 Sending Speed: 0.694842238176602 MBPS
+client INFO MainThread 2017-09-02 21:43:59,764 Closing Socket
+Networking INFO MainThread 2017-09-02 21:43:59,764 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:43:59,764 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:43:59,765 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:43:59,816 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:43:59,816 Opening large file: 
+client INFO MainThread 2017-09-02 21:43:59,819 File copied into memory: 
+client INFO MainThread 2017-09-02 21:43:59,819 Sending large file: 
+client INFO MainThread 2017-09-02 21:44:07,489 Sending Speed: 0.6519180657321005 MBPS
+client INFO MainThread 2017-09-02 21:44:07,489 Closing Socket
+Networking INFO MainThread 2017-09-02 21:44:07,490 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:44:07,490 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:44:07,490 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:44:07,595 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:44:07,595 Opening large file: 
+client INFO MainThread 2017-09-02 21:44:07,598 File copied into memory: 
+client INFO MainThread 2017-09-02 21:44:07,598 Sending large file: 
+client INFO MainThread 2017-09-02 21:44:15,511 Sending Speed: 0.6319083200674175 MBPS
+client INFO MainThread 2017-09-02 21:44:15,512 Closing Socket
+Networking INFO MainThread 2017-09-02 21:44:15,512 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:44:15,512 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:44:15,513 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:44:15,537 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:44:15,538 Opening large file: 
+client INFO MainThread 2017-09-02 21:44:15,540 File copied into memory: 
+client INFO MainThread 2017-09-02 21:44:15,540 Sending large file: 
+client INFO MainThread 2017-09-02 21:44:25,285 Sending Speed: 0.5130959315945555 MBPS
+client INFO MainThread 2017-09-02 21:44:25,286 Closing Socket
+Networking INFO MainThread 2017-09-02 21:44:25,287 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:44:25,287 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 21:44:25,288 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 21:44:25,359 The Client Socket has been connected to server: 192.168.225.49 on port: 10001 
+client INFO MainThread 2017-09-02 21:44:25,359 Opening large file: 
+client INFO MainThread 2017-09-02 21:44:25,363 File copied into memory: 
+client INFO MainThread 2017-09-02 21:44:25,363 Sending large file: 
+client INFO MainThread 2017-09-02 21:44:33,062 Sending Speed: 0.6494581554896507 MBPS
+client INFO MainThread 2017-09-02 21:44:33,063 Closing Socket
+client INFO MainThread 2017-09-02 21:59:26,635 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 21:59:26,636 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:59:26,636 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 21:59:26,636 Opening File
+Networking INFO MainThread 2017-09-02 21:59:26,636 Reading File
+Networking INFO MainThread 2017-09-02 21:59:26,658 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:59:26,658 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 21:59:26,658 Closing File
+Networking INFO MainThread 2017-09-02 21:59:26,679 Calculating Size of Stuff
+client INFO MainThread 2017-09-02 21:59:58,194 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 21:59:58,194 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 21:59:58,195 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 21:59:58,195 Opening File
+Networking INFO MainThread 2017-09-02 21:59:58,195 Reading File
+Networking INFO MainThread 2017-09-02 21:59:58,215 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:59:58,216 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 21:59:58,216 Closing File
+Networking INFO MainThread 2017-09-02 21:59:58,237 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 21:59:58,237 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 21:59:58,238 Check Sum Found
+client INFO MainThread 2017-09-02 22:01:38,926 Loggers set, imports completed
+client INFO MainThread 2017-09-02 22:01:45,623 Loggers set, imports completed
+client INFO MainThread 2017-09-02 22:02:08,611 Loggers set, imports completed
+client INFO MainThread 2017-09-02 22:02:22,565 Loggers set, imports completed
+client INFO MainThread 2017-09-02 22:02:40,600 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:02:40,601 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:02:40,601 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:02:40,602 Opening File
+Networking INFO MainThread 2017-09-02 22:02:40,602 Reading File
+Networking INFO MainThread 2017-09-02 22:02:40,623 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:02:40,623 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:02:40,623 Closing File
+Networking INFO MainThread 2017-09-02 22:02:40,646 Calculating Size of Stuff
+client INFO MainThread 2017-09-02 22:02:49,422 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:02:49,422 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:02:49,422 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:02:49,423 Opening File
+Networking INFO MainThread 2017-09-02 22:02:49,423 Reading File
+Networking INFO MainThread 2017-09-02 22:02:49,442 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:02:49,443 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:02:49,443 Closing File
+Networking INFO MainThread 2017-09-02 22:02:49,464 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:02:49,464 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:02:49,465 Check Sum Found
+client INFO MainThread 2017-09-02 22:05:16,329 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:05:16,329 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:16,329 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:05:16,329 Opening File
+Networking INFO MainThread 2017-09-02 22:05:16,329 Reading File
+Networking INFO MainThread 2017-09-02 22:05:16,348 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:05:16,349 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:05:16,349 Closing File
+Networking INFO MainThread 2017-09-02 22:05:16,371 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:05:16,372 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:05:16,372 Check Sum Found
+client INFO MainThread 2017-09-02 22:05:40,536 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:05:40,536 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:40,536 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:05:40,537 Opening File
+Networking INFO MainThread 2017-09-02 22:05:40,537 Reading File
+Networking INFO MainThread 2017-09-02 22:05:40,559 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:05:40,559 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:05:40,559 Closing File
+Networking INFO MainThread 2017-09-02 22:05:40,583 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:05:40,583 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:05:40,771 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:05:40,771 Creating Directory
+Networking INFO MainThread 2017-09-02 22:05:40,802 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 22:05:40,859 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:05:40,860 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:05:40,860 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:05:40,860 Connectin...
+client INFO MainThread 2017-09-02 22:05:40,860 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:40,866 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:40,866 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:05:40,866 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:05:40,866 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:05:40,872 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:05:40,873 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:05:40,873 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:05:40,873 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:05:41,875 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:41,876 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:41,883 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:41,893 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:41,894 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:41,901 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:41,901 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:47,032 Sending Speed: 0.9745868950741186 MBPS
+client INFO MainThread 2017-09-02 22:05:47,033 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:47,034 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:47,035 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:47,035 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:47,042 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:47,043 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:47,049 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:47,049 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:47,655 Sending Speed: 3.580225722787525 MBPS
+client INFO MainThread 2017-09-02 22:05:47,656 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:47,656 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:47,657 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:47,658 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:47,673 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:47,673 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:47,680 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:47,681 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:49,822 Sending Speed: 2.336178969517661 MBPS
+client INFO MainThread 2017-09-02 22:05:49,822 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:49,823 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:49,823 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:49,824 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:49,829 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:49,829 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:49,833 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:49,833 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:51,539 Sending Speed: 2.931203353580385 MBPS
+client INFO MainThread 2017-09-02 22:05:51,540 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:51,540 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:51,541 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:51,541 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:51,549 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:51,550 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:51,554 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:51,555 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:53,394 Sending Speed: 2.7189019457351478 MBPS
+client INFO MainThread 2017-09-02 22:05:53,395 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:53,396 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:53,397 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:53,397 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:53,408 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:53,409 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:53,414 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:53,415 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:55,238 Sending Speed: 2.742718962112394 MBPS
+client INFO MainThread 2017-09-02 22:05:55,239 Closing Socket
+Networking INFO MainThread 2017-09-02 22:05:55,240 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:05:55,240 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:05:55,240 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:05:55,249 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:05:55,249 Opening large file: 
+client INFO MainThread 2017-09-02 22:05:55,253 File copied into memory: 
+client INFO MainThread 2017-09-02 22:05:55,253 Sending large file: 
+client INFO MainThread 2017-09-02 22:05:57,037 Sending Speed: 2.804631543641484 MBPS
+client INFO MainThread 2017-09-02 22:05:57,037 Closing Socket
+client INFO MainThread 2017-09-02 22:08:01,024 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:08:01,024 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:01,024 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:08:01,024 Opening File
+Networking INFO MainThread 2017-09-02 22:08:01,024 Reading File
+Networking INFO MainThread 2017-09-02 22:08:01,039 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:08:01,039 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:08:01,039 Closing File
+Networking INFO MainThread 2017-09-02 22:08:01,061 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:08:01,062 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:08:01,227 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:08:01,227 Creating Directory
+Networking INFO MainThread 2017-09-02 22:08:01,230 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 22:08:01,270 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:08:01,270 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:08:01,270 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:08:01,270 Connectin...
+client INFO MainThread 2017-09-02 22:08:01,270 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:01,276 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:01,276 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:08:01,277 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:08:01,277 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:08:01,282 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:08:01,282 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:08:01,282 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:08:01,283 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:08:02,285 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:02,285 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:02,292 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:02,298 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:02,299 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:02,310 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:02,311 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:04,592 Sending Speed: 2.1922017494628903 MBPS
+client INFO MainThread 2017-09-02 22:08:04,593 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:04,594 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:04,595 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:04,596 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:04,601 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:04,601 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:04,608 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:04,609 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:05,498 Sending Speed: 2.4389793135571893 MBPS
+client INFO MainThread 2017-09-02 22:08:05,499 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:05,500 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:05,500 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:05,501 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:05,516 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:05,517 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:05,524 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:05,525 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:07,476 Sending Speed: 2.562558965066776 MBPS
+client INFO MainThread 2017-09-02 22:08:07,477 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:07,478 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:07,478 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:07,478 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:07,483 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:07,483 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:07,486 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:07,487 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:09,857 Sending Speed: 2.110308411819654 MBPS
+client INFO MainThread 2017-09-02 22:08:09,857 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:09,858 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:09,858 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:09,859 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:09,890 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:09,891 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:09,896 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:09,897 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:11,870 Sending Speed: 2.5341239370537916 MBPS
+client INFO MainThread 2017-09-02 22:08:11,871 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:11,872 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:11,872 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:11,873 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:11,894 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:11,895 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:11,900 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:11,900 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:13,879 Sending Speed: 2.5273515141282523 MBPS
+client INFO MainThread 2017-09-02 22:08:13,880 Closing Socket
+Networking INFO MainThread 2017-09-02 22:08:13,881 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:08:13,881 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:08:13,882 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:08:13,891 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:08:13,892 Opening large file: 
+client INFO MainThread 2017-09-02 22:08:13,896 File copied into memory: 
+client INFO MainThread 2017-09-02 22:08:13,897 Sending large file: 
+client INFO MainThread 2017-09-02 22:08:15,915 Sending Speed: 2.478206265054774 MBPS
+client INFO MainThread 2017-09-02 22:08:15,915 Closing Socket
+client INFO MainThread 2017-09-02 22:09:37,721 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:09:37,722 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:37,722 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:09:37,722 Opening File
+Networking INFO MainThread 2017-09-02 22:09:37,722 Reading File
+Networking INFO MainThread 2017-09-02 22:09:37,740 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:09:37,740 File read with the size of: 32.167232513427734 MB
+Networking INFO MainThread 2017-09-02 22:09:37,741 Closing File
+Networking INFO MainThread 2017-09-02 22:09:37,763 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:09:37,763 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:09:37,928 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:09:37,928 Creating Directory
+Networking INFO MainThread 2017-09-02 22:09:37,931 Spliting the Files into 5m parts: 
+Networking INFO MainThread 2017-09-02 22:09:37,972 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:09:37,972 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:09:37,972 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:09:37,972 Connectin...
+client INFO MainThread 2017-09-02 22:09:37,972 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:37,977 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:37,977 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:09:37,977 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:09:37,977 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:09:37,984 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:09:37,984 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:09:37,985 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:09:37,985 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:09:38,986 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:38,988 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:38,998 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:39,005 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:39,006 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:39,012 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:39,012 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:41,317 Sending Speed: 2.170180039351982 MBPS
+client INFO MainThread 2017-09-02 22:09:41,317 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:41,319 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:41,320 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:41,320 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:41,326 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:41,326 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:41,333 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:41,334 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:42,513 Sending Speed: 1.8396740813299035 MBPS
+client INFO MainThread 2017-09-02 22:09:42,514 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:42,515 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:42,516 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:42,517 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:42,526 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:42,526 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:42,533 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:42,533 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:44,448 Sending Speed: 2.6116172320781454 MBPS
+client INFO MainThread 2017-09-02 22:09:44,449 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:44,450 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:44,451 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:44,451 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:44,465 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:44,466 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:44,470 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:44,471 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:46,471 Sending Speed: 2.5000112652577187 MBPS
+client INFO MainThread 2017-09-02 22:09:46,472 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:46,473 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:46,473 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:46,474 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:46,479 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:46,480 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:46,484 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:46,485 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:48,603 Sending Speed: 2.3605039667299836 MBPS
+client INFO MainThread 2017-09-02 22:09:48,604 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:48,605 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:48,605 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:48,606 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:48,617 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:48,619 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:48,625 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:48,626 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:50,627 Sending Speed: 2.500299189630668 MBPS
+client INFO MainThread 2017-09-02 22:09:50,628 Closing Socket
+Networking INFO MainThread 2017-09-02 22:09:50,628 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:09:50,629 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:09:50,629 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:09:50,636 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:09:50,637 Opening large file: 
+client INFO MainThread 2017-09-02 22:09:50,641 File copied into memory: 
+client INFO MainThread 2017-09-02 22:09:50,642 Sending large file: 
+client INFO MainThread 2017-09-02 22:09:52,089 Sending Speed: 3.4565208218784322 MBPS
+client INFO MainThread 2017-09-02 22:09:52,090 Closing Socket
+client INFO MainThread 2017-09-02 22:11:21,376 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:11:21,377 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:21,377 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:11:21,377 Opening File
+Networking INFO MainThread 2017-09-02 22:11:21,377 Reading File
+Networking INFO MainThread 2017-09-02 22:11:21,483 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:11:21,483 File read with the size of: 176.1465139389038 MB
+Networking INFO MainThread 2017-09-02 22:11:21,483 Closing File
+Networking INFO MainThread 2017-09-02 22:11:21,598 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:11:21,598 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:11:22,651 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:11:22,651 Creating Directory
+Networking INFO MainThread 2017-09-02 22:11:22,659 Spliting the Files into 3m parts: 
+Networking INFO MainThread 2017-09-02 22:11:24,032 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:11:24,033 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:11:24,033 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:11:24,033 Connectin...
+client INFO MainThread 2017-09-02 22:11:24,033 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:24,101 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:24,101 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:11:24,102 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:11:24,102 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:11:24,106 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:11:24,107 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:11:24,107 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:11:24,107 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:11:25,109 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:25,109 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:25,133 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:25,138 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:25,138 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:25,141 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:25,141 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:27,134 Sending Speed: 1.5054441301882187 MBPS
+client INFO MainThread 2017-09-02 22:11:27,135 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:27,136 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:27,137 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:27,138 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:27,149 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:27,150 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:27,159 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:27,159 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:28,438 Sending Speed: 2.348006440714211 MBPS
+client INFO MainThread 2017-09-02 22:11:28,439 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:28,439 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:28,440 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:28,440 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:28,453 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:28,454 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:28,456 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:28,457 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:29,802 Sending Speed: 2.230558814806831 MBPS
+client INFO MainThread 2017-09-02 22:11:29,803 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:29,804 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:29,805 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:29,806 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:29,814 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:29,815 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:29,820 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:29,820 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:30,946 Sending Speed: 2.667196585457672 MBPS
+client INFO MainThread 2017-09-02 22:11:30,946 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:30,946 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:30,947 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:30,947 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:30,962 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:30,962 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:30,963 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:30,963 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:32,131 Sending Speed: 2.5693078737995014 MBPS
+client INFO MainThread 2017-09-02 22:11:32,132 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:32,133 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:32,134 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:32,134 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:32,141 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:32,142 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:32,145 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:32,145 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:33,596 Sending Speed: 2.0689456503706185 MBPS
+client INFO MainThread 2017-09-02 22:11:33,596 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:33,597 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:33,597 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:33,598 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:33,615 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:33,615 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:33,618 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:33,619 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:35,005 Sending Speed: 2.164584947491409 MBPS
+client INFO MainThread 2017-09-02 22:11:35,006 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:35,007 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:35,007 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:35,008 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:35,017 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:35,018 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:35,020 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:35,021 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:36,098 Sending Speed: 2.7872557975515297 MBPS
+client INFO MainThread 2017-09-02 22:11:36,099 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:36,099 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:36,100 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:36,100 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:36,105 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:36,106 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:36,108 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:36,108 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:37,437 Sending Speed: 2.2583048002673416 MBPS
+client INFO MainThread 2017-09-02 22:11:37,438 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:37,439 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:37,440 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:37,440 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:37,449 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:37,450 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:37,452 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:37,453 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:38,676 Sending Speed: 2.453497484213574 MBPS
+client INFO MainThread 2017-09-02 22:11:38,677 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:38,678 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:38,678 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:38,679 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:38,683 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:38,684 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:38,686 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:38,687 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:39,712 Sending Speed: 2.9282403275670883 MBPS
+client INFO MainThread 2017-09-02 22:11:39,712 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:39,713 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:39,713 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:39,713 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:39,726 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:39,726 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:39,727 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:39,728 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:40,928 Sending Speed: 2.500666053641613 MBPS
+client INFO MainThread 2017-09-02 22:11:40,928 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:40,929 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:40,930 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:40,930 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:40,941 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:40,941 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:40,944 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:40,944 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:42,033 Sending Speed: 2.757257853873514 MBPS
+client INFO MainThread 2017-09-02 22:11:42,033 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:42,034 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:42,034 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:42,035 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:42,048 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:42,049 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:42,052 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:42,053 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:43,301 Sending Speed: 2.4055590529895987 MBPS
+client INFO MainThread 2017-09-02 22:11:43,301 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:43,302 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:43,302 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:43,303 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:43,314 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:43,315 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:43,320 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:43,321 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:44,288 Sending Speed: 3.10447535832843 MBPS
+client INFO MainThread 2017-09-02 22:11:44,288 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:44,289 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:44,289 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:44,289 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:44,296 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:44,296 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:44,298 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:44,299 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:45,662 Sending Speed: 2.2013407085482677 MBPS
+client INFO MainThread 2017-09-02 22:11:45,662 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:45,663 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:45,663 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:45,663 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:45,672 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:45,673 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:45,674 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:45,675 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:46,810 Sending Speed: 2.644648949983669 MBPS
+client INFO MainThread 2017-09-02 22:11:46,810 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:46,811 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:46,811 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:46,812 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:46,822 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:46,823 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:46,826 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:46,827 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:48,003 Sending Speed: 2.5522758338679714 MBPS
+client INFO MainThread 2017-09-02 22:11:48,003 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:48,004 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:48,004 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:48,004 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:48,013 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:48,014 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:48,015 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:48,015 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:49,147 Sending Speed: 2.651839347527147 MBPS
+client INFO MainThread 2017-09-02 22:11:49,147 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:49,148 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:49,148 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:49,149 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:49,156 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:49,156 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:49,158 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:49,159 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:50,553 Sending Speed: 2.152291678889399 MBPS
+client INFO MainThread 2017-09-02 22:11:50,554 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:50,555 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:50,555 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:50,556 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:50,562 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:50,562 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:50,565 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:50,566 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:51,490 Sending Speed: 3.249753938469509 MBPS
+client INFO MainThread 2017-09-02 22:11:51,490 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:51,490 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:51,491 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:51,491 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:51,495 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:51,495 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:51,498 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:51,498 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:52,539 Sending Speed: 2.8851781969063603 MBPS
+client INFO MainThread 2017-09-02 22:11:52,539 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:52,540 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:52,540 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:52,541 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:52,545 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:52,546 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:52,549 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:52,549 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:53,527 Sending Speed: 3.0699149146401714 MBPS
+client INFO MainThread 2017-09-02 22:11:53,528 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:53,529 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:53,529 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:53,530 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:53,538 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:53,538 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:53,541 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:53,542 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:54,517 Sending Speed: 3.076295178572651 MBPS
+client INFO MainThread 2017-09-02 22:11:54,518 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:54,519 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:54,519 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:54,520 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:54,540 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:54,541 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:54,544 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:54,544 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:55,448 Sending Speed: 3.3212070854985463 MBPS
+client INFO MainThread 2017-09-02 22:11:55,448 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:55,449 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:55,449 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:55,450 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:55,467 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:55,468 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:55,471 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:55,472 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:56,482 Sending Speed: 2.9713740295780915 MBPS
+client INFO MainThread 2017-09-02 22:11:56,482 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:56,483 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:56,484 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:56,484 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:56,508 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:56,509 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:56,511 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:56,512 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:57,317 Sending Speed: 3.727767012265771 MBPS
+client INFO MainThread 2017-09-02 22:11:57,318 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:57,318 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:57,318 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:57,319 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:57,337 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:57,337 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:57,339 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:57,340 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:58,446 Sending Speed: 2.7123574686246674 MBPS
+client INFO MainThread 2017-09-02 22:11:58,447 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:58,448 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:58,448 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:58,448 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:58,462 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:58,463 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:58,465 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:58,465 Sending large file: 
+client INFO MainThread 2017-09-02 22:11:59,401 Sending Speed: 3.20795277852915 MBPS
+client INFO MainThread 2017-09-02 22:11:59,401 Closing Socket
+Networking INFO MainThread 2017-09-02 22:11:59,402 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:11:59,402 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:11:59,402 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:11:59,406 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:11:59,406 Opening large file: 
+client INFO MainThread 2017-09-02 22:11:59,407 File copied into memory: 
+client INFO MainThread 2017-09-02 22:11:59,408 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:00,312 Sending Speed: 3.3188454266928873 MBPS
+client INFO MainThread 2017-09-02 22:12:00,313 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:00,313 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:00,314 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:00,314 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:00,321 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:00,322 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:00,324 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:00,325 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:01,229 Sending Speed: 3.320067007968608 MBPS
+client INFO MainThread 2017-09-02 22:12:01,230 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:01,230 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:01,231 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:01,231 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:01,248 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:01,249 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:01,253 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:01,254 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:02,074 Sending Speed: 3.6595073424007833 MBPS
+client INFO MainThread 2017-09-02 22:12:02,075 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:02,076 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:02,076 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:02,077 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:02,104 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:02,104 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:02,107 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:02,108 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:03,011 Sending Speed: 3.3243579768592944 MBPS
+client INFO MainThread 2017-09-02 22:12:03,012 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:03,013 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:03,013 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:03,013 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:03,035 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:03,036 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:03,038 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:03,039 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:03,820 Sending Speed: 3.8473409319809133 MBPS
+client INFO MainThread 2017-09-02 22:12:03,820 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:03,821 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:03,821 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:03,822 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:03,828 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:03,829 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:03,831 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:03,832 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:04,866 Sending Speed: 2.90106554937339 MBPS
+client INFO MainThread 2017-09-02 22:12:04,867 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:04,868 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:04,868 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:04,869 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:04,879 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:04,880 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:04,883 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:04,883 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:05,742 Sending Speed: 3.499302533571829 MBPS
+client INFO MainThread 2017-09-02 22:12:05,743 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:05,744 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:05,744 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:05,745 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:05,763 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:05,764 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:05,766 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:05,767 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:06,565 Sending Speed: 3.760142982351027 MBPS
+client INFO MainThread 2017-09-02 22:12:06,566 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:06,567 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:06,567 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:06,568 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:06,588 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:06,589 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:06,593 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:06,593 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:07,522 Sending Speed: 3.234571830095988 MBPS
+client INFO MainThread 2017-09-02 22:12:07,522 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:07,523 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:07,524 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:07,524 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:07,530 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:07,531 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:07,534 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:07,535 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:08,508 Sending Speed: 3.086638749728022 MBPS
+client INFO MainThread 2017-09-02 22:12:08,508 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:08,509 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:08,509 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:08,510 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:08,518 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:08,518 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:08,521 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:08,521 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:09,655 Sending Speed: 2.645787801957914 MBPS
+client INFO MainThread 2017-09-02 22:12:09,656 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:09,657 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:09,657 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:09,657 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:09,666 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:09,666 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:09,669 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:09,669 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:10,855 Sending Speed: 2.5305811507658387 MBPS
+client INFO MainThread 2017-09-02 22:12:10,856 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:10,857 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:10,857 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:10,858 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:10,875 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:10,876 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:10,879 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:10,880 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:11,831 Sending Speed: 3.1566910427354715 MBPS
+client INFO MainThread 2017-09-02 22:12:11,832 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:11,832 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:11,833 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:11,833 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:11,852 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:11,852 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:11,855 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:11,855 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:12,850 Sending Speed: 3.0175628594779393 MBPS
+client INFO MainThread 2017-09-02 22:12:12,851 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:12,852 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:12,852 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:12,853 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:12,864 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:12,864 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:12,867 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:12,868 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:13,785 Sending Speed: 3.2727391896338047 MBPS
+client INFO MainThread 2017-09-02 22:12:13,786 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:13,787 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:13,787 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:13,788 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:13,808 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:13,808 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:13,812 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:13,812 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:14,721 Sending Speed: 3.3024134592495993 MBPS
+client INFO MainThread 2017-09-02 22:12:14,722 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:14,722 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:14,723 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:14,723 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:14,736 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:14,738 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:14,742 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:14,742 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:15,707 Sending Speed: 3.111873475816725 MBPS
+client INFO MainThread 2017-09-02 22:12:15,707 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:15,708 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:15,708 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:15,709 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:15,721 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:15,722 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:15,724 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:15,724 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:16,655 Sending Speed: 3.2260228351265305 MBPS
+client INFO MainThread 2017-09-02 22:12:16,655 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:16,656 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:16,656 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:16,657 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:16,665 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:16,665 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:16,668 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:16,669 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:17,769 Sending Speed: 2.728307451399415 MBPS
+client INFO MainThread 2017-09-02 22:12:17,770 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:17,771 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:17,771 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:17,772 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:17,785 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:17,786 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:17,789 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:17,789 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:18,883 Sending Speed: 2.7435844435839205 MBPS
+client INFO MainThread 2017-09-02 22:12:18,884 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:18,885 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:18,885 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:18,886 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:18,894 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:18,895 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:18,899 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:18,901 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:20,033 Sending Speed: 2.651317468187146 MBPS
+client INFO MainThread 2017-09-02 22:12:20,033 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:20,034 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:20,034 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:20,035 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:20,049 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:20,049 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:20,052 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:20,053 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:21,116 Sending Speed: 2.8256051069551678 MBPS
+client INFO MainThread 2017-09-02 22:12:21,116 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:21,117 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:21,118 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:21,118 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:21,122 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:21,123 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:21,126 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:21,126 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:22,230 Sending Speed: 2.718369442030861 MBPS
+client INFO MainThread 2017-09-02 22:12:22,231 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:22,232 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:22,232 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:22,233 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:22,239 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:22,240 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:22,242 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:22,243 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:23,364 Sending Speed: 2.677792636617383 MBPS
+client INFO MainThread 2017-09-02 22:12:23,365 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:23,365 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:23,366 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:23,366 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:23,375 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:23,376 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:23,378 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:23,379 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:24,197 Sending Speed: 2.6268753741995194 MBPS
+client INFO MainThread 2017-09-02 22:12:24,198 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:24,199 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:24,199 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:24,199 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:24,213 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:24,213 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:24,216 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:24,217 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:25,256 Sending Speed: 2.887099941996637 MBPS
+client INFO MainThread 2017-09-02 22:12:25,257 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:25,258 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:25,258 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:25,259 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:25,274 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:25,275 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:25,278 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:25,279 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:26,621 Sending Speed: 2.235974343336987 MBPS
+client INFO MainThread 2017-09-02 22:12:26,622 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:26,622 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:26,623 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:26,623 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:26,635 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:26,635 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:26,638 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:26,639 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:29,815 Sending Speed: 0.9447653216553149 MBPS
+client INFO MainThread 2017-09-02 22:12:29,816 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:29,816 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:29,817 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:29,817 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:29,835 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:29,836 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:29,839 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:29,840 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:32,895 Sending Speed: 0.9821258865093231 MBPS
+client INFO MainThread 2017-09-02 22:12:32,896 Closing Socket
+Networking INFO MainThread 2017-09-02 22:12:32,896 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:12:32,897 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:12:32,898 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:12:32,907 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:12:32,908 Opening large file: 
+client INFO MainThread 2017-09-02 22:12:32,911 File copied into memory: 
+client INFO MainThread 2017-09-02 22:12:32,912 Sending large file: 
+client INFO MainThread 2017-09-02 22:12:48,842 Sending Speed: 0.18832300291809087 MBPS
+client INFO MainThread 2017-09-02 22:12:48,843 Closing Socket
+client INFO MainThread 2017-09-02 22:13:01,532 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:13:01,533 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:01,534 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:13:01,534 Opening File
+Networking INFO MainThread 2017-09-02 22:13:01,535 Reading File
+Networking INFO MainThread 2017-09-02 22:13:01,655 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:13:01,655 File read with the size of: 176.1465139389038 MB
+Networking INFO MainThread 2017-09-02 22:13:01,655 Closing File
+Networking INFO MainThread 2017-09-02 22:13:01,767 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:13:01,767 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:13:02,660 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:13:02,660 Creating Directory
+Networking INFO MainThread 2017-09-02 22:13:02,666 Spliting the Files into 3m parts: 
+Networking INFO MainThread 2017-09-02 22:13:03,942 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:13:03,943 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:13:03,944 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:13:03,944 Connectin...
+client INFO MainThread 2017-09-02 22:13:03,944 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:03,951 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:03,951 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:13:03,952 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:13:03,952 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:13:04,004 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:13:04,005 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:13:04,006 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:13:04,006 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:13:05,008 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:05,009 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:05,043 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:05,049 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:05,050 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:05,054 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:05,054 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:06,944 Sending Speed: 1.5875823059441962 MBPS
+client INFO MainThread 2017-09-02 22:13:06,945 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:06,947 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:06,947 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:06,948 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:06,955 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:06,955 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:06,962 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:06,963 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:08,066 Sending Speed: 2.720207636962181 MBPS
+client INFO MainThread 2017-09-02 22:13:08,067 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:08,068 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:08,068 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:08,069 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:08,108 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:08,109 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:08,112 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:08,112 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:09,456 Sending Speed: 2.233083559412362 MBPS
+client INFO MainThread 2017-09-02 22:13:09,457 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:09,457 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:09,458 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:09,458 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:09,465 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:09,465 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:09,467 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:09,468 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:10,631 Sending Speed: 2.58074707474993 MBPS
+client INFO MainThread 2017-09-02 22:13:10,632 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:10,632 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:10,632 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:10,633 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:10,640 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:10,641 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:10,643 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:10,644 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:12,019 Sending Speed: 2.18189479291406 MBPS
+client INFO MainThread 2017-09-02 22:13:12,020 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:12,021 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:12,022 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:12,022 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:12,050 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:12,050 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:12,053 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:12,053 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:13,145 Sending Speed: 2.7493392694207595 MBPS
+client INFO MainThread 2017-09-02 22:13:13,146 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:13,147 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:13,147 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:13,148 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:13,154 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:13,154 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:13,157 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:13,158 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:14,265 Sending Speed: 2.712784342267977 MBPS
+client INFO MainThread 2017-09-02 22:13:14,265 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:14,266 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:14,266 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:14,267 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:14,277 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:14,277 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:14,280 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:14,281 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:15,608 Sending Speed: 2.2611621466643257 MBPS
+client INFO MainThread 2017-09-02 22:13:15,609 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:15,609 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:15,610 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:15,610 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:15,618 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:15,618 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:15,621 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:15,621 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:16,787 Sending Speed: 2.5739254875416755 MBPS
+client INFO MainThread 2017-09-02 22:13:16,788 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:16,789 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:16,789 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:16,790 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:16,796 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:16,797 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:16,800 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:16,800 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:18,028 Sending Speed: 2.4439738958163386 MBPS
+client INFO MainThread 2017-09-02 22:13:18,029 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:18,029 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:18,030 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:18,030 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:18,067 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:18,068 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:18,070 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:18,071 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:19,367 Sending Speed: 2.314936614964818 MBPS
+client INFO MainThread 2017-09-02 22:13:19,367 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:19,368 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:19,368 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:19,368 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:19,376 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:19,376 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:19,377 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:19,377 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:20,798 Sending Speed: 2.1128737080879474 MBPS
+client INFO MainThread 2017-09-02 22:13:20,798 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:20,799 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:20,799 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:20,800 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:20,815 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:20,816 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:20,818 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:20,818 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:22,086 Sending Speed: 2.3668719591265983 MBPS
+client INFO MainThread 2017-09-02 22:13:22,086 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:22,086 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:22,086 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:22,086 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:22,114 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:22,114 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:22,115 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:22,115 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:23,313 Sending Speed: 2.505123310645353 MBPS
+client INFO MainThread 2017-09-02 22:13:23,313 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:23,314 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:23,314 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:23,314 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:23,320 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:23,320 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:23,322 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:23,322 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:24,552 Sending Speed: 2.4400431732744554 MBPS
+client INFO MainThread 2017-09-02 22:13:24,552 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:24,553 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:24,553 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:24,553 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:24,575 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:24,576 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:24,578 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:24,578 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:25,723 Sending Speed: 2.62134134794763 MBPS
+client INFO MainThread 2017-09-02 22:13:25,724 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:25,725 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:25,725 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:25,726 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:25,734 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:25,735 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:25,737 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:25,738 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:26,965 Sending Speed: 2.446021035746228 MBPS
+client INFO MainThread 2017-09-02 22:13:26,965 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:26,966 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:26,966 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:26,966 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:26,979 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:26,979 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:26,982 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:26,982 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:28,058 Sending Speed: 2.791038807126207 MBPS
+client INFO MainThread 2017-09-02 22:13:28,058 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:28,059 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:28,060 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:28,060 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:28,069 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:28,070 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:28,073 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:28,075 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:29,299 Sending Speed: 2.451764531666485 MBPS
+client INFO MainThread 2017-09-02 22:13:29,300 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:29,301 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:29,301 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:29,302 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:29,315 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:29,316 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:29,318 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:29,319 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:30,540 Sending Speed: 2.4584540689978556 MBPS
+client INFO MainThread 2017-09-02 22:13:30,541 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:30,541 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:30,542 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:30,542 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:30,546 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:30,547 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:30,549 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:30,550 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:31,566 Sending Speed: 2.9531228877840694 MBPS
+client INFO MainThread 2017-09-02 22:13:31,567 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:31,567 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:31,568 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:31,568 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:31,599 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:31,599 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:31,602 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:31,603 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:32,552 Sending Speed: 3.1608874267808598 MBPS
+client INFO MainThread 2017-09-02 22:13:32,553 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:32,554 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:32,554 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:32,555 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:32,565 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:32,565 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:32,568 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:32,569 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:33,596 Sending Speed: 2.923821732774828 MBPS
+client INFO MainThread 2017-09-02 22:13:33,596 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:33,597 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:33,598 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:33,599 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:33,610 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:33,610 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:33,613 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:33,613 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:34,540 Sending Speed: 3.2384178005035578 MBPS
+client INFO MainThread 2017-09-02 22:13:34,541 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:34,542 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:34,543 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:34,543 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:34,557 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:34,557 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:34,560 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:34,560 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:35,466 Sending Speed: 3.3138598550049827 MBPS
+client INFO MainThread 2017-09-02 22:13:35,467 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:35,467 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:35,468 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:35,468 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:35,478 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:35,479 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:35,482 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:35,483 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:36,543 Sending Speed: 2.8304114193193857 MBPS
+client INFO MainThread 2017-09-02 22:13:36,544 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:36,545 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:36,545 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:36,545 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:36,551 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:36,552 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:36,554 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:36,554 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:37,438 Sending Speed: 3.3970428039935023 MBPS
+client INFO MainThread 2017-09-02 22:13:37,439 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:37,439 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:37,440 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:37,440 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:37,451 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:37,452 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:37,456 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:37,456 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:38,477 Sending Speed: 2.942844513671094 MBPS
+client INFO MainThread 2017-09-02 22:13:38,477 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:38,478 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:38,478 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:38,479 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:38,488 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:38,489 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:38,492 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:38,493 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:39,444 Sending Speed: 3.156157382417684 MBPS
+client INFO MainThread 2017-09-02 22:13:39,445 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:39,446 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:39,446 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:39,446 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:39,451 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:39,452 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:39,454 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:39,454 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:40,376 Sending Speed: 3.2576709559313715 MBPS
+client INFO MainThread 2017-09-02 22:13:40,376 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:40,377 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:40,378 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:40,378 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:40,384 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:40,385 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:40,387 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:40,387 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:41,235 Sending Speed: 3.5412564929609927 MBPS
+client INFO MainThread 2017-09-02 22:13:41,235 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:41,236 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:41,236 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:41,236 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:41,241 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:41,242 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:41,243 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:41,243 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:42,269 Sending Speed: 2.9245366207275314 MBPS
+client INFO MainThread 2017-09-02 22:13:42,270 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:42,271 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:42,271 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:42,272 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:42,275 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:42,276 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:42,278 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:42,279 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:43,295 Sending Speed: 2.9551265265536553 MBPS
+client INFO MainThread 2017-09-02 22:13:43,295 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:43,296 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:43,297 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:43,297 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:43,303 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:43,303 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:43,304 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:43,305 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:44,261 Sending Speed: 3.137136228224554 MBPS
+client INFO MainThread 2017-09-02 22:13:44,262 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:44,262 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:44,263 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:44,263 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:44,268 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:44,269 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:44,272 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:44,272 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:45,290 Sending Speed: 2.9474471748713382 MBPS
+client INFO MainThread 2017-09-02 22:13:45,291 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:45,291 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:45,292 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:45,292 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:45,303 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:45,304 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:45,308 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:45,308 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:46,245 Sending Speed: 3.2049051203166026 MBPS
+client INFO MainThread 2017-09-02 22:13:46,245 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:46,246 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:46,246 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:46,246 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:46,249 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:46,250 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:46,252 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:46,252 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:47,085 Sending Speed: 3.6041431317869246 MBPS
+client INFO MainThread 2017-09-02 22:13:47,085 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:47,086 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:47,086 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:47,087 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:47,092 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:47,093 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:47,095 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:47,096 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:48,015 Sending Speed: 3.2636522794649734 MBPS
+client INFO MainThread 2017-09-02 22:13:48,016 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:48,016 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:48,017 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:48,017 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:48,029 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:48,030 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:48,033 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:48,033 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:49,017 Sending Speed: 3.0514394799548556 MBPS
+client INFO MainThread 2017-09-02 22:13:49,018 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:49,019 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:49,020 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:49,020 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:49,027 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:49,028 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:49,032 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:49,032 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:50,079 Sending Speed: 2.868443470797624 MBPS
+client INFO MainThread 2017-09-02 22:13:50,080 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:50,080 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:50,081 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:50,081 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:50,089 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:50,089 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:50,092 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:50,092 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:50,898 Sending Speed: 3.7268395782285566 MBPS
+client INFO MainThread 2017-09-02 22:13:50,898 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:50,899 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:50,899 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:50,900 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:50,921 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:50,922 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:50,923 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:50,923 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:51,905 Sending Speed: 3.0570670771572073 MBPS
+client INFO MainThread 2017-09-02 22:13:51,906 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:51,907 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:51,907 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:51,908 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:51,917 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:51,917 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:51,920 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:51,921 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:52,783 Sending Speed: 3.480402577972722 MBPS
+client INFO MainThread 2017-09-02 22:13:52,784 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:52,785 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:52,785 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:52,786 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:52,794 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:52,794 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:52,797 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:52,797 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:53,651 Sending Speed: 3.51649053068835 MBPS
+client INFO MainThread 2017-09-02 22:13:53,652 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:53,652 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:53,653 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:53,653 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:53,660 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:53,661 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:53,663 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:53,663 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:54,503 Sending Speed: 3.5747791872043635 MBPS
+client INFO MainThread 2017-09-02 22:13:54,504 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:54,505 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:54,505 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:54,505 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:54,511 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:54,512 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:54,514 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:54,515 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:55,483 Sending Speed: 3.1006053342151576 MBPS
+client INFO MainThread 2017-09-02 22:13:55,484 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:55,485 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:55,486 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:55,487 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:55,495 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:55,496 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:55,498 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:55,499 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:56,506 Sending Speed: 2.9800211629786184 MBPS
+client INFO MainThread 2017-09-02 22:13:56,507 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:56,508 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:56,508 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:56,508 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:56,516 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:56,516 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:56,519 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:56,520 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:57,453 Sending Speed: 3.218045543509701 MBPS
+client INFO MainThread 2017-09-02 22:13:57,454 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:57,455 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:57,456 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:57,456 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:57,477 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:57,477 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:57,479 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:57,480 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:58,474 Sending Speed: 3.020720538835316 MBPS
+client INFO MainThread 2017-09-02 22:13:58,474 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:58,475 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:58,475 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:58,476 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:58,489 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:58,490 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:58,493 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:58,494 Sending large file: 
+client INFO MainThread 2017-09-02 22:13:59,374 Sending Speed: 3.411091008554942 MBPS
+client INFO MainThread 2017-09-02 22:13:59,375 Closing Socket
+Networking INFO MainThread 2017-09-02 22:13:59,375 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:13:59,376 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:13:59,376 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:13:59,388 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:13:59,388 Opening large file: 
+client INFO MainThread 2017-09-02 22:13:59,391 File copied into memory: 
+client INFO MainThread 2017-09-02 22:13:59,392 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:00,434 Sending Speed: 2.879126531482657 MBPS
+client INFO MainThread 2017-09-02 22:14:00,435 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:00,436 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:00,436 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:00,437 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:00,443 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:00,444 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:00,446 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:00,447 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:01,430 Sending Speed: 3.052761668529905 MBPS
+client INFO MainThread 2017-09-02 22:14:01,431 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:01,432 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:01,433 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:01,433 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:01,465 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:01,465 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:01,466 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:01,467 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:02,743 Sending Speed: 2.3521273565119474 MBPS
+client INFO MainThread 2017-09-02 22:14:02,743 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:02,744 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:02,744 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:02,745 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:02,751 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:02,752 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:02,754 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:02,754 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:03,653 Sending Speed: 2.3884255776122143 MBPS
+client INFO MainThread 2017-09-02 22:14:03,654 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:03,654 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:03,655 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:03,656 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:03,663 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:03,663 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:03,664 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:03,665 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:04,898 Sending Speed: 2.431892370150389 MBPS
+client INFO MainThread 2017-09-02 22:14:04,899 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:04,900 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:04,900 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:04,900 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:04,914 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:04,914 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:04,916 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:04,916 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:06,052 Sending Speed: 2.6420385220173657 MBPS
+client INFO MainThread 2017-09-02 22:14:06,053 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:06,054 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:06,054 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:06,055 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:06,063 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:06,064 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:06,066 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:06,066 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:07,253 Sending Speed: 2.528951092913857 MBPS
+client INFO MainThread 2017-09-02 22:14:07,253 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:07,254 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:07,255 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:07,255 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:07,266 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:07,267 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:07,270 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:07,271 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:08,495 Sending Speed: 2.4514745910018356 MBPS
+client INFO MainThread 2017-09-02 22:14:08,496 Closing Socket
+Networking INFO MainThread 2017-09-02 22:14:08,496 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:14:08,496 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:14:08,497 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:14:08,504 The Client Socket has been connected to server: 192.168.43.1 on port: 10001 
+client INFO MainThread 2017-09-02 22:14:08,505 Opening large file: 
+client INFO MainThread 2017-09-02 22:14:08,507 File copied into memory: 
+client INFO MainThread 2017-09-02 22:14:08,508 Sending large file: 
+client INFO MainThread 2017-09-02 22:14:09,856 Sending Speed: 2.22653296780784 MBPS
+client INFO MainThread 2017-09-02 22:14:09,857 Closing Socket
+client INFO MainThread 2017-09-02 22:18:04,209 Loggers set, imports completed
+Networking INFO MainThread 2017-09-02 22:18:04,209 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:04,209 Attributes Initialized(Network)
+Networking INFO MainThread 2017-09-02 22:18:04,210 Opening File
+Networking INFO MainThread 2017-09-02 22:18:04,210 Reading File
+Networking INFO MainThread 2017-09-02 22:18:04,313 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:18:04,313 File read with the size of: 176.1465139389038 MB
+Networking INFO MainThread 2017-09-02 22:18:04,314 Closing File
+Networking INFO MainThread 2017-09-02 22:18:04,449 Calculating Size of Stuff
+Networking INFO MainThread 2017-09-02 22:18:04,449 Attempting to Find Check Sum of stuff: 
+Networking INFO MainThread 2017-09-02 22:18:05,382 Check Sum Found
+Networking INFO MainThread 2017-09-02 22:18:05,382 Creating Directory
+Networking INFO MainThread 2017-09-02 22:18:05,391 Spliting the Files into 3m parts: 
+Networking INFO MainThread 2017-09-02 22:18:06,533 Files split Succesfully
+Networking INFO MainThread 2017-09-02 22:18:06,533 Entering Directory to count number of files 
+Networking INFO MainThread 2017-09-02 22:18:06,534 Files calulcated.
+Exit Directory to count number of files 
+client INFO MainThread 2017-09-02 22:18:06,534 Connectin...
+client INFO MainThread 2017-09-02 22:18:06,534 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:06,535 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:06,536 Sending CRC and number of files to server
+client INFO MainThread 2017-09-02 22:18:06,536 CRC and Number of files sent.
+client INFO MainThread 2017-09-02 22:18:06,537 Waiting for handshake reply.
+Networking INFO MainThread 2017-09-02 22:18:06,538 Decoding data for CRC and File Numbers
+Networking INFO MainThread 2017-09-02 22:18:06,538 Data decoded for CRC and File Numbers
+client INFO MainThread 2017-09-02 22:18:06,538 Handshake reply recieved.
+client INFO MainThread 2017-09-02 22:18:06,539 Handshake Complete
+Networking INFO MainThread 2017-09-02 22:18:07,540 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:07,540 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:07,553 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:07,557 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:07,557 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:07,558 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:07,559 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:08,265 Sending Speed: 4.2485854417493725 MBPS
+client INFO MainThread 2017-09-02 22:18:08,265 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:08,265 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:08,265 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:08,266 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:08,271 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:08,271 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:08,273 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:08,273 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:08,864 Sending Speed: 5.082407169549771 MBPS
+client INFO MainThread 2017-09-02 22:18:08,864 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:08,864 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:08,864 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:08,864 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:08,880 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:08,880 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:08,881 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:08,882 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:09,443 Sending Speed: 5.34451871254592 MBPS
+client INFO MainThread 2017-09-02 22:18:09,443 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:09,443 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:09,444 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:09,444 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:09,449 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:09,450 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:09,451 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:09,451 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:10,130 Sending Speed: 4.4191222332732085 MBPS
+client INFO MainThread 2017-09-02 22:18:10,130 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:10,130 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:10,131 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:10,131 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:10,141 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:10,141 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:10,142 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:10,143 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:10,705 Sending Speed: 5.332889739722155 MBPS
+client INFO MainThread 2017-09-02 22:18:10,706 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:10,706 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:10,706 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:10,706 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:10,717 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:10,717 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:10,718 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:10,718 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:11,356 Sending Speed: 4.701906240214517 MBPS
+client INFO MainThread 2017-09-02 22:18:11,356 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:11,356 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:11,357 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:11,357 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:11,369 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:11,369 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:11,370 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:11,370 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:12,006 Sending Speed: 4.718722308119527 MBPS
+client INFO MainThread 2017-09-02 22:18:12,007 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:12,007 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:12,007 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:12,007 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:12,012 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:12,013 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:12,014 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:12,014 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:12,778 Sending Speed: 3.9263093320585796 MBPS
+client INFO MainThread 2017-09-02 22:18:12,778 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:12,778 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:12,779 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:12,779 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:12,789 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:12,789 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:12,790 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:12,790 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:13,505 Sending Speed: 4.197753777564865 MBPS
+client INFO MainThread 2017-09-02 22:18:13,505 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:13,505 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:13,505 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:13,506 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:13,539 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:13,539 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:13,540 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:13,540 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:14,184 Sending Speed: 4.660412557847543 MBPS
+client INFO MainThread 2017-09-02 22:18:14,184 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:14,184 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:14,185 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:14,185 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:14,207 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:14,207 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:14,208 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:14,208 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:14,831 Sending Speed: 4.81996868927418 MBPS
+client INFO MainThread 2017-09-02 22:18:14,831 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:14,831 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:14,831 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:14,831 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:14,837 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:14,838 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:14,839 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:14,839 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:15,528 Sending Speed: 4.352218939055659 MBPS
+client INFO MainThread 2017-09-02 22:18:15,529 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:15,529 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:15,529 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:15,529 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:15,541 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:15,541 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:15,542 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:15,542 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:16,508 Sending Speed: 3.1055204424863723 MBPS
+client INFO MainThread 2017-09-02 22:18:16,508 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:16,509 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:16,509 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:16,509 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:16,514 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:16,514 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:16,515 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:16,515 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:17,339 Sending Speed: 3.644412263463758 MBPS
+client INFO MainThread 2017-09-02 22:18:17,339 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:17,339 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:17,339 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:17,339 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:17,349 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:17,349 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:17,350 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:17,350 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:18,816 Sending Speed: 2.0464559988290207 MBPS
+client INFO MainThread 2017-09-02 22:18:18,816 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:18,817 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:18,817 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:18,817 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:18,821 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:18,821 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:18,822 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:18,822 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:20,010 Sending Speed: 2.525808298986569 MBPS
+client INFO MainThread 2017-09-02 22:18:20,010 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:20,011 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:20,011 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:20,011 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:20,029 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:20,029 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:20,030 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:20,031 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:21,139 Sending Speed: 2.707613611569085 MBPS
+client INFO MainThread 2017-09-02 22:18:21,139 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:21,139 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:21,139 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:21,140 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:21,145 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:21,146 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:21,147 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:21,147 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:21,806 Sending Speed: 4.550972851587012 MBPS
+client INFO MainThread 2017-09-02 22:18:21,806 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:21,807 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:21,807 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:21,807 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:21,814 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:21,814 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:21,815 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:21,816 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:22,536 Sending Speed: 4.165708752327747 MBPS
+client INFO MainThread 2017-09-02 22:18:22,536 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:22,536 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:22,536 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:22,536 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:22,542 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:22,542 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:22,544 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:22,544 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:23,287 Sending Speed: 4.037332116651314 MBPS
+client INFO MainThread 2017-09-02 22:18:23,287 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:23,287 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:23,288 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:23,288 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:23,296 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:23,296 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:23,297 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:23,297 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:24,116 Sending Speed: 3.6636873167507638 MBPS
+client INFO MainThread 2017-09-02 22:18:24,116 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:24,116 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:24,116 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:24,116 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:24,145 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:24,145 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:24,146 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:24,147 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:24,807 Sending Speed: 4.5424200187789765 MBPS
+client INFO MainThread 2017-09-02 22:18:24,808 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:24,808 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:24,808 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:24,808 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:24,815 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:24,815 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:24,816 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:24,817 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:25,604 Sending Speed: 3.8094454419870685 MBPS
+client INFO MainThread 2017-09-02 22:18:25,605 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:25,605 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:25,605 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:25,605 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:25,616 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:25,616 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:25,618 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:25,618 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:26,318 Sending Speed: 4.289301701534094 MBPS
+client INFO MainThread 2017-09-02 22:18:26,318 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:26,318 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:26,318 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:26,318 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:26,322 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:26,322 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:26,323 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:26,323 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:27,023 Sending Speed: 4.289196430397524 MBPS
+client INFO MainThread 2017-09-02 22:18:27,023 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:27,023 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:27,023 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:27,023 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:27,031 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:27,031 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:27,032 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:27,032 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:27,850 Sending Speed: 3.668458567670623 MBPS
+client INFO MainThread 2017-09-02 22:18:27,850 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:27,851 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:27,851 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:27,851 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:27,861 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:27,861 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:27,862 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:27,862 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:28,595 Sending Speed: 4.092159945884683 MBPS
+client INFO MainThread 2017-09-02 22:18:28,596 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:28,596 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:28,596 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:28,596 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:28,602 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:28,602 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:28,603 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:28,604 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:29,414 Sending Speed: 3.702460128001158 MBPS
+client INFO MainThread 2017-09-02 22:18:29,414 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:29,414 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:29,415 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:29,415 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:29,436 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:29,437 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:29,438 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:29,438 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:30,143 Sending Speed: 4.255345541439508 MBPS
+client INFO MainThread 2017-09-02 22:18:30,144 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:30,145 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:30,145 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:30,145 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:30,158 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:30,159 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:30,160 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:30,160 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:30,812 Sending Speed: 4.603074973560671 MBPS
+client INFO MainThread 2017-09-02 22:18:30,812 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:30,812 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:30,812 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:30,813 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:30,821 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:30,821 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:30,822 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:30,822 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:31,635 Sending Speed: 3.691044547580956 MBPS
+client INFO MainThread 2017-09-02 22:18:31,635 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:31,635 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:31,635 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:31,636 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:31,648 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:31,648 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:31,649 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:31,650 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:32,489 Sending Speed: 3.573874537361954 MBPS
+client INFO MainThread 2017-09-02 22:18:32,490 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:32,490 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:32,490 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:32,490 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:32,493 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:32,493 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:32,494 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:32,494 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:33,450 Sending Speed: 3.1378418715766085 MBPS
+client INFO MainThread 2017-09-02 22:18:33,451 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:33,451 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:33,451 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:33,451 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:33,457 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:33,457 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:33,458 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:33,458 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:34,264 Sending Speed: 3.7250478469961856 MBPS
+client INFO MainThread 2017-09-02 22:18:34,264 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:34,265 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:34,265 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:34,265 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:34,275 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:34,276 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:34,277 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:34,277 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:35,097 Sending Speed: 3.660187549413668 MBPS
+client INFO MainThread 2017-09-02 22:18:35,097 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:35,097 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:35,097 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:35,097 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:35,106 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:35,106 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:35,107 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:35,107 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:35,881 Sending Speed: 3.879341584034791 MBPS
+client INFO MainThread 2017-09-02 22:18:35,881 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:35,882 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:35,882 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:35,882 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:35,891 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:35,891 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:35,892 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:35,892 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:36,664 Sending Speed: 3.8880620258515206 MBPS
+client INFO MainThread 2017-09-02 22:18:36,664 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:36,665 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:36,665 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:36,665 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:36,674 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:36,674 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:36,675 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:36,675 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:37,375 Sending Speed: 4.287154900228513 MBPS
+client INFO MainThread 2017-09-02 22:18:37,376 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:37,376 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:37,376 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:37,376 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:37,386 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:37,387 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:37,390 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:37,390 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:38,341 Sending Speed: 3.1568399297333993 MBPS
+client INFO MainThread 2017-09-02 22:18:38,341 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:38,341 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:38,341 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:38,341 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:38,366 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:38,366 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:38,367 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:38,367 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:39,219 Sending Speed: 3.5234176387556104 MBPS
+client INFO MainThread 2017-09-02 22:18:39,220 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:39,220 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:39,221 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:39,221 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:39,226 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:39,227 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:39,228 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:39,228 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:40,014 Sending Speed: 3.8155202558751773 MBPS
+client INFO MainThread 2017-09-02 22:18:40,014 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:40,015 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:40,015 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:40,015 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:40,025 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:40,025 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:40,026 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:40,027 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:40,926 Sending Speed: 3.3365508145392817 MBPS
+client INFO MainThread 2017-09-02 22:18:40,926 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:40,926 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:40,927 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:40,927 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:40,932 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:40,932 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:40,933 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:40,933 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:41,799 Sending Speed: 3.4660567001151126 MBPS
+client INFO MainThread 2017-09-02 22:18:41,799 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:41,799 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:41,799 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:41,800 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:41,816 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:41,816 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:41,817 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:41,817 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:42,774 Sending Speed: 3.134661945715707 MBPS
+client INFO MainThread 2017-09-02 22:18:42,775 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:42,775 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:42,775 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:42,775 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:42,826 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:42,826 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:42,827 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:42,827 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:43,540 Sending Speed: 4.213130134137987 MBPS
+client INFO MainThread 2017-09-02 22:18:43,540 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:43,540 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:43,540 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:43,540 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:43,543 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:43,544 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:43,545 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:43,545 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:44,422 Sending Speed: 3.421896963814715 MBPS
+client INFO MainThread 2017-09-02 22:18:44,422 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:44,422 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:44,422 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:44,423 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:44,473 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:44,474 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:44,474 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:44,475 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:45,278 Sending Speed: 3.737775040970422 MBPS
+client INFO MainThread 2017-09-02 22:18:45,278 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:45,278 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:45,278 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:45,278 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:45,304 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:45,304 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:45,305 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:45,305 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:46,126 Sending Speed: 3.658636961146708 MBPS
+client INFO MainThread 2017-09-02 22:18:46,126 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:46,126 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:46,126 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:46,126 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:46,147 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:46,147 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:46,148 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:46,148 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:46,963 Sending Speed: 3.683843432956509 MBPS
+client INFO MainThread 2017-09-02 22:18:46,963 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:46,963 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:46,963 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:46,963 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:46,978 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:46,980 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:46,981 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:46,981 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:48,243 Sending Speed: 2.3781491513686737 MBPS
+client INFO MainThread 2017-09-02 22:18:48,243 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:48,244 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:48,244 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:48,244 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:48,262 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:48,262 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:48,263 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:48,263 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:49,110 Sending Speed: 3.543281783264437 MBPS
+client INFO MainThread 2017-09-02 22:18:49,111 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:49,111 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:49,111 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:49,111 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:49,127 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:49,128 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:49,129 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:49,129 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:49,886 Sending Speed: 3.964773100008161 MBPS
+client INFO MainThread 2017-09-02 22:18:49,886 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:49,886 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:49,887 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:49,888 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:49,895 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:49,895 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:49,896 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:49,896 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:50,779 Sending Speed: 3.396218531849795 MBPS
+client INFO MainThread 2017-09-02 22:18:50,780 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:50,780 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:50,780 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:50,780 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:50,790 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:50,791 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:50,792 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:50,793 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:51,447 Sending Speed: 3.2872422694527916 MBPS
+client INFO MainThread 2017-09-02 22:18:51,447 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:51,447 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:51,447 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:51,447 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:51,463 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:51,463 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:51,464 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:51,464 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:52,288 Sending Speed: 3.6432040858870125 MBPS
+client INFO MainThread 2017-09-02 22:18:52,288 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:52,288 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:52,288 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:52,289 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:52,311 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:52,311 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:52,312 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:52,313 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:53,245 Sending Speed: 3.2181385449450874 MBPS
+client INFO MainThread 2017-09-02 22:18:53,245 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:53,245 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:53,245 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:53,246 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:53,259 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:53,259 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:53,260 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:53,260 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:54,000 Sending Speed: 4.059159060541679 MBPS
+client INFO MainThread 2017-09-02 22:18:54,000 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:54,000 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:54,000 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:54,000 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:54,007 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:54,007 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:54,008 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:54,009 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:54,886 Sending Speed: 3.4204923828187117 MBPS
+client INFO MainThread 2017-09-02 22:18:54,886 Closing Socket
+Networking INFO MainThread 2017-09-02 22:18:54,886 Initalizing Attributes(Network)
+Networking INFO MainThread 2017-09-02 22:18:54,887 Attributes Initialized(Network)
+client INFO MainThread 2017-09-02 22:18:54,887 connecting the Socket to server on port: 
+client INFO MainThread 2017-09-02 22:18:54,928 The Client Socket has been connected to server: 10.42.0.102 on port: 10001 
+client INFO MainThread 2017-09-02 22:18:54,929 Opening large file: 
+client INFO MainThread 2017-09-02 22:18:54,930 File copied into memory: 
+client INFO MainThread 2017-09-02 22:18:54,930 Sending large file: 
+client INFO MainThread 2017-09-02 22:18:55,883 Sending Speed: 3.1469009648745256 MBPS
+client INFO MainThread 2017-09-02 22:18:55,884 Closing Socket

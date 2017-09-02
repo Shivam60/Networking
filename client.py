@@ -8,7 +8,7 @@ except ImportError as e:
 finally:
     try:
         logging.stream=sys.stdout
-        logging.basicConfig(filemode='w',filename='log'+'.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
+        logging.basicConfig(filemode='a',filename='log.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
         logging.getLogger().addHandler(logging.StreamHandler())
     except ValueError as e:
         logging.info("Cannot Create log files: Program Exiting.\nError: ")
@@ -23,7 +23,7 @@ class client(Network):
         Network.__init__(self,path=path,file=filenm)
         self.host=host
         self.port=port
-#        self.file=filenm
+        #self.file=filenm
         self.packetsize=packetsize
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     def connect(self):
@@ -39,22 +39,6 @@ class client(Network):
             if nf:
                 os._exit(0)
             logging.info("The Client Socket has been connected to server: %s on port: %d "%(self.host,self.port))
-    def connect_server(self):
-        nf=False
-        try:
-            logging.info("Binding the Socket to host and Port: ")
-            self.sock.bind((self.host,self.port))
-        except socket.error as e:
-            logging.error("Cannot Bind the socket to Host %s and Port %d \n" %(self.host,self.port))
-            logging.error(e)
-            nf=True
-        finally:
-            if nf:
-                os._exit(0)
-            logging.info("The Server Socket is now being binded to host: %s and port: %d "%(self.host,self.port))
-            #Socket listining to max 1 connection
-            logging.info("Server socket is listing for 1 connections")
-            self.sock.listen(1)
     def send(self):
         logging.info("Opening large file: ")
         nf=False
@@ -95,6 +79,7 @@ class client(Network):
         logging.info("CRC and Number of files sent.")
         logging.info("Waiting for handshake reply.")
         data=self.sock.recv(1024)
+        #print(data)
         crc,fno=self.find_crc_fno(data)
         logging.info("Handshake reply recieved.")        
         if crc==self.crc and fno==self.file_no:
@@ -109,18 +94,17 @@ class client(Network):
         
 if __name__=="__main__":
     #gen("asv.bytes",1024*1024*1024)
-    clin=client(host='localhost',port=10001,filenm='2.bytes',path=os.getcwd())
+    clin=client(host='10.42.0.102',port=10001,filenm='1.mp4',path=os.getcwd())
     clin.open()
     clin.tobytes()
     clin.crc_n()
-    clin.split(chunk='5m')
+    clin.split(chunk='3m')
     clin.file_n()
     clin.handshake()
     clin.sock.close()
-    '''
-    os.chdir(os.getcwd()+r'/split')
+    os.chdir(os.getcwd()+r'/c_split')
+    time.sleep(1)
     for file in os.listdir():        
-        clin=client(host='192.168.43.1',port=10001,file=file)
-        clin.connect_client()
+        clin=client(host='10.42.0.102',port=10001,filenm=file,path=os.getcwd())
+        clin.connect()
         clin.send()
-    '''

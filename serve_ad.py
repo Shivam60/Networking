@@ -5,23 +5,24 @@ except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
 finally:
+    '''
     try:
         logging.stream=sys.stdout
         logging.basicConfig(filemode='a',filename='log.log',level=logging.DEBUG,format='%(module)s %(levelname)s %(threadName)s %(asctime)s %(message)s')
         logging.getLogger().addHandler(logging.StreamHandler())
     except ValueError as e:
-        logging.info("Cannot Create log files: Program Exiting.\nError: ")
+        print("Cannot Create log files: Program Exiting.\nError: ")
         Logger.exception(e)
         os._exit(0)
     finally:
-        logging.info("Loggers set, imports completed")
-
+        print("Loggers set, imports completed")
+    '''
 
 
 class server(Network):
     def __init__(self,host,port,packetsize,path,filenm,lm=1):
-        logging.info("Initalizing Attributes")
-        logging.info("Checking if host and port are available: ")        
+        print("Initalizing Attributes")
+        print("Checking if host and port are available: ")        
         self.host=host
         self.port=port
         self.lm=lm
@@ -35,18 +36,18 @@ class server(Network):
     def connect(self):
         nf=False
         try:
-            logging.info("Binding the Socket to host and Port: ")
+            print("Binding the Socket to host and Port: ")
             self.sock.bind((self.host,self.port))
         except socket.error as e:
-            logging.error("Cannot Bind the socket to Host %s and Port %d \n" %(self.host,self.port))
-            logging.error(e)
+            print("Cannot Bind the socket to Host %s and Port %d \n" %(self.host,self.port))
+            print(e)
             nf=True
         finally:
             if nf:
                 os._exit(0)
-            logging.info("The Server Socket is now being binded to host: %s and port: %d "%(self.host,self.port))
+            print("The Server Socket is now being binded to host: %s and port: %d "%(self.host,self.port))
             #Socket listining to max 1 connection
-            logging.info("Server socket is listing for 1 connections")
+            print("Server socket is listing for 1 connections")
             self.sock.listen(1)
     def start(self):
         self.connect()
@@ -54,49 +55,50 @@ class server(Network):
         self.recvstuff=b""
         stt=time.time()
         while i<self.lm:
-            logging.info("Waiting for the connection: ")
+            print("Waiting for the connection: ")
             conn,addr=self.sock.accept()
-            logging.info("Connection Recieved from connection %s and address %s"%(conn,addr))            
+            print("Connection Recieved from connection %s and address %s"%(conn,addr))            
             recvstufftemp=b''           
             data=conn.recv(self.packetsize)
-            logging.info("Started Recieving Data: ")
+            print("Started Recieving Data: ")
             st=time.time()
             while data:                
                 recvstufftemp+=data
                 data=conn.recv(self.packetsize)
             et=time.time()
             #self.write(self.recvstuff,name=str(i)+'.bytes',dir=os.getcwd()+str(r'/s_split'))
-            logging.info("Speed of data transfer is "+str((sys.getsizeof(recvstufftemp)/1024**2)/(et-st))+" MBPS")
-            logging.info("Closing Socket")
+            print("Speed of data transfer is "+str((sys.getsizeof(recvstufftemp)/1024**2)/(et-st))+" MBPS")
+            print("Closing Socket")
             conn.close()
             self.recvstuff+=recvstufftemp            
             i+=1
-        logging.info("Average Speed of data transfer is "+str((sys.getsizeof(self.recvstuff)/1024**2)/(time.time()-stt))+" MBPS")
-        logging.info("Total Data Recieved: "+str((sys.getsizeof(self.recvstuff)/1024**2)))
-        #logging.info("CRC: "+str(self.crc_n(crcstuff=self.recvstuff)))
+        print("Average Speed of data transfer is "+str((sys.getsizeof(self.recvstuff)/1024**2)/(time.time()-stt))+" MBPS")
+        print("Total Data Recieved: "+str((sys.getsizeof(self.recvstuff)/1024**2)))
+        print("CRC: "+str(self.crc_n(crcstuff=self.recvstuff)))
+
     def handshake(self):
-        logging.info("Connecting...")
+        print("Connecting...")
         self.connect()
-        conn,addr=self.sock.accept()    
-        logging.info("Connection recieved.")        
-        logging.info("Waiting for handshake reply.")  
+        conn,addr=self.sock.accept()
+        print("Connection recieved.")     
+        print("Waiting for handshake reply.")  
         data=conn.recv(self.packetsize)
-        logging.info("Handshake reply recieved.")
+        print("Handshake reply recieved.")
         #print(data) 
         self.crc,self.file_no=self.find_crc_fno(data)
-        logging.info("Sending handshake back") 
+        print("Sending handshake back") 
         conn.send((self.crc+'/\\'+str(self.file_no)+'/\\').encode('utf-8'))
-        logging.info("Handshake back sent")
+        print("Handshake back sent")
         self.sock.close()
     def makedir(self):
-        logging.info("Making Temprorary Server Directory: ")
+        print("Making Temprorary Server Directory: ")
         try:
             subprocess.run(['mkdir','s_split'])
         except subprocess.CalledProcessError as err:
-            logging.error("Cannot make directory. Program exit.\n"+str(p))
+            print("Cannot make directory. Program exit.\n"+str(p))
             os._exit(0)
         finally:
-            logging.info("Directory made succesfully")
+            print("Directory made succesfully")
 if __name__=="__main__":
 #    192.168.43.9
     serv=server(host='localhost',port=10001,lm=1,packetsize=65536,path=os.getcwd(),filenm='s.bytes')

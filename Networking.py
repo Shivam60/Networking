@@ -76,12 +76,15 @@ class Network():
     		if nf:
     			logging.info("Deompressed Size is: "+str(self.sz())+"MB")
     #write file to disk with a supplied name
-    def write(self,name):
+    def write(self,stufft,name,dir):
         nf=True
+        logging.info("Changing Directory: ")
+        t=os.getcwd()
+        os.chdir(dir)
         logging.info("Attempt to write file")
         try:
             with open(name,'wb') as outfile:
-                outfile.write(self.stuff)
+                outfile.write(stufft)
         except IOError as e:
             nf=False
             logging.error("Cannot write file to disk.")
@@ -89,16 +92,21 @@ class Network():
         finally:
             if nf:
                 logging.info("File written witten with size: "+str(self.sz())+" MB")
+                outfile.close()
             outfile.close()
+            logging.info("Changing Directory: (Coming back)")
+            t=os.getcwd()
+            os.chdir(t)
+
     #to Split the file into small chunks
     def split(self, chunk):        
         try:
             logging.info("Creating Directory")
-            p=subprocess.run(['mkdir','split'])
+            p=subprocess.run(['mkdir','c_split'])
             logging.info("Spliting the Files into %s parts: " %chunk)
-            p=subprocess.run(['split','-b',chunk,self.path+self.file,os.getcwd()+r'/split/'+'part_'])
+            p=subprocess.run(['split','-b',chunk,self.path+self.file,os.getcwd()+r'/c_split/'+'part_'])
         except subprocess.CalledProcessError as err:
-            logging.error("Cannot Split the file. Program Exit."+str(p))
+            logging.error("Cannot Split the file. Program Exit.\n"+str(p))
             os._exit(0)
         finally:
             logging.info("Files split Succesfully")
@@ -109,7 +117,7 @@ class Network():
         print(t)
         try:
             logging.info("Entering Directory to count number of files ")
-            os.chdir(t+'/split')            
+            os.chdir(t+'/c_split')            
         except:
             nf=False
             logging.error('Cannot enter into Directory.')
@@ -119,7 +127,7 @@ class Network():
                 logging.info("Files calulcated.\nExit Directory to count number of files ")
                 os.chdir(t)
     #to calculate the Check sum of the file
-    def crc_n(self):W
+    def crc_n(self):
         nf=True
         try:
             logging.info("Attempting to Find Check Sum of stuff: ")
@@ -142,4 +150,14 @@ class Network():
         data=data[0].split(' ')
         crc=data[0]+' '+data[1]
         logging.info('Data decoded for CRC and File Numbers')
-        return crc,file_no    
+        return crc,file_no
+    #to join smaller files into single file
+    def join(self,name):
+        try:
+            logging.info("Joining the Files into %s parts: " %chunk)
+            p=subprocess.run(['split','-b',chunk,self.path+self.file,os.getcwd()+r'/split/'+'part_'])
+        except subprocess.CalledProcessError as err:
+            logging.error("Cannot Split the file. Program Exit.\n"+str(p))
+            os._exit(0)
+        finally:
+            logging.info("Files split Succesfully")        
