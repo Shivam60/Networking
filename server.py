@@ -1,6 +1,5 @@
 try:
-    import socket,sys,time,os,logging,subprocess
-    from Networking import Network
+    import socket,sys,time,os,logging,subprocess,Networking
 except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
@@ -18,16 +17,15 @@ finally:
 
 
 
-class server(Network):
-    def __init__(self,host,port,packetsize,path,filenm,lm=1):
+class server():
+    def __init__(self,host,port,packetsize,path,filenm):
         logging.info("Initalizing Attributes")
         logging.info("Checking if host and port are available: ")        
         self.host=host
         self.port=port
-        self.lm=lm
         self.packetsize=packetsize
         self.recvstuff=None
-        Network.__init__(self,path=path,file=filenm)
+        self.file_no=1
         #creating a socket with IP4 config and TCP stream protocol
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -53,7 +51,7 @@ class server(Network):
         i=0
         self.recvstuff=b""
         stt=time.time()
-        while i<self.lm:
+        while i<self.file_no:
             logging.info("Waiting for the connection: ")
             conn,addr=self.sock.accept()
             logging.info("Connection Recieved from connection %s and address %s"%(conn,addr))            
@@ -64,13 +62,14 @@ class server(Network):
             while data:                
                 recvstufftemp+=data
                 data=conn.recv(self.packetsize)
-            et=time.time()
-            #self.write(self.recvstuff,name=str(i)+'.bytes',dir=os.getcwd()+str(r'/s_split'))
+            et=time.time()            
             logging.info("Speed of data transfer is "+str((sys.getsizeof(recvstufftemp)/1024**2)/(et-st))+" MBPS")
             logging.info("Closing Socket")
             conn.close()
             self.recvstuff+=recvstufftemp            
             i+=1
+            if recvstufftemp:
+                Networking.write(stufft=recvstufftemp,name=str(i)+'.bytes',dir=os.getcwd()+str(r'/s_split'))
         logging.info("Average Speed of data transfer is "+str((sys.getsizeof(self.recvstuff)/1024**2)/(time.time()-stt))+" MBPS")
         logging.info("Total Data Recieved: "+str((sys.getsizeof(self.recvstuff)/1024**2)))
         #logging.info("CRC: "+str(self.crc_n(crcstuff=self.recvstuff)))
@@ -83,25 +82,20 @@ class server(Network):
         data=conn.recv(self.packetsize)
         logging.info("Handshake reply recieved.")
         #print(data) 
-        self.crc,self.file_no=self.find_crc_fno(data)
+        self.crc,self.file_no=Networking.find_crc_fno(data)
         logging.info("Sending handshake back") 
         conn.send((self.crc+'/\\'+str(self.file_no)+'/\\').encode('utf-8'))
         logging.info("Handshake back sent")
+        
+        conn.close()
         self.sock.close()
-    def makedir(self):
-        logging.info("Making Temprorary Server Directory: ")
-        try:
-            subprocess.run(['mkdir','s_split'])
-        except subprocess.CalledProcessError as err:
-            logging.error("Cannot make directory. Program exit.\n"+str(p))
-            os._exit(0)
-        finally:
-            logging.info("Directory made succesfully")
+        self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)        
+
 if __name__=="__main__":
 #    192.168.43.9
-    serv=server(host='localhost',port=10001,lm=1,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
+    Networking.set_directory(path=r'/home/shivam/Work/Projects/test/server/')
+    Networking.makedir('s_split')
+    serv=server(host='localhost',port=10001,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
     serv.handshake()
-    serv.sock.close()
-#    serv.makedir()
-    serv=server(host='localhost',port=10001,lm=serv.file_no,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
     serv.start()

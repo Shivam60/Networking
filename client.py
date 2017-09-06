@@ -1,7 +1,5 @@
 try:
-    import socket,sys,time,os,logging
-  #  from sendfile import sendfile
-    from Networking import Network
+    import socket,sys,time,os,logging,Networking
 except ImportError as e:
    print("Importing Failed, Make sure the Requirements are met. Program exiting:\n"+e)
    os._exit(0)
@@ -18,9 +16,8 @@ finally:
         logging.info("Loggers set, imports completed")
 
 
-class client(Network):
-    def __init__(self,host,port,filenm,path,packetsize=65536):
-        Network.__init__(self,path=path,file=filenm)
+class client():
+    def __init__(self,host,port,path,packetsize=65536):
         self.host=host
         self.port=port
         #self.file=filenm
@@ -39,11 +36,11 @@ class client(Network):
             if nf:
                 os._exit(0)
             logging.info("The Client Socket has been connected to server: %s on port: %d "%(self.host,self.port))
-    def send(self):
+    def send(self,filenm):
         logging.info("Opening large file: ")
         nf=False
         try:
-            with open(self.file,'rb') as infile:
+            with open(filenm,'rb') as infile:
                 pass
                 data=infile.read()
         except IOError as e:
@@ -53,35 +50,28 @@ class client(Network):
             infile.close()
             if nf:
                 os_exit(0)
-            logging.info("File copied into memory: ")
-            
+            logging.info("File copied into memory: ")            
         logging.info("Sending large file: ")
         st=time.time()
         offset=0
-        '''
-        infile=open(self.file,'rb')
-        while True:
-            sent=sendfile(self.sock.fileno(),infile.fileno(),offset,os.path.getsize(self.file))
-            if sent==0:
-                break
-            offset+=sent
-        '''
-        self.sock.sendall(data)
+        print(Networking.sz(data))
+        self.sock.sendall(data)    
         et=time.time()
+        
         logging.info("Sending Speed: "+str((sys.getsizeof(data)/1024**2)/(et-st))+" MBPS")
         logging.info("Closing Socket")
         self.sock.close()
     def handshake(self):
-        logging.info("Connectin...")
+        logging.info("Connecting...")
         self.connect()
         logging.info("Sending CRC and number of files to server")
         self.sock.send((self.crc+'/\\'+str(self.file_no)+'/\\').encode('utf-8'))
         logging.info("CRC and Number of files sent.")
         logging.info("Waiting for handshake reply.")
         data=self.sock.recv(1024)
-        #print(data)
-        crc,fno=self.find_crc_fno(data)
-        logging.info("Handshake reply recieved.")        
+        crc,fno=Networking.find_crc_fno(data)
+        logging.info("Handshake reply recieved.")
+        self.sock.close()       
         if crc==self.crc and fno==self.file_no:
             logging.info("Handshake Complete")
             return True
@@ -90,21 +80,29 @@ class client(Network):
             logging.info("Recieved: \nCRC: "+str(crc)+"\nFile Numbers: "+str(fno))
             logging.info("Actual: \nCRC: "+str(self.crc)+"\nFile Numbers: "+str(self.file_no))
             return False
-        self.sock.close()
+        
         
 if __name__=="__main__":
-    #gen("asv.bytes",1024*1024*1024)
-    clin=client(host='10.42.0.102',port=10001,filenm='1.mp4',path=os.getcwd())
-    clin.open()
-    clin.tobytes()
-    clin.crc_n()
-    clin.split(chunk='3m')
-    clin.file_n()
-    clin.handshake()
-    clin.sock.close()
-    os.chdir(os.getcwd()+r'/c_split')
-    time.sleep(1)
-    for file in os.listdir():        
-        clin=client(host='10.42.0.102',port=10001,filenm=file,path=os.getcwd())
-        clin.connect()
-        clin.send()
+    Networking.set_directory(path=r'/home/shivam/Work/Projects/test/client/')
+    Networking.makedir('c_split')
+    clin=client(host='localhost',port=10001,path=os.getcwd())
+    a=open(os.getcwd()+'/1.mp4','rb')
+    clin.stuff=a.read() 
+#   clin.stuff=Networking.open(os.getcwd(),filenm='/1.mp4')
+    clin.stuff=Networking.tobytes(clin.stuff)
+    Networking.write(stufft=clin.stuff,name='1.bytes',dir=os.getcwd())
+    clin.crc=Networking.crc_n(filenm='1.bytes')
+    Networking.split(path=os.getcwd()+'/c_split/',filenm='1.bytes',chunk='3m')
+    #remove to bytes function#
+    clin.file_no= Networking.file_n(dir=os.getcwd()+r'/c_split/')
+    if clin.handshake():
+        Networking.set_directory(os.getcwd()+r'/c_split/')
+        time.sleep(1)
+        filelist=sorted(os.listdir())
+        print(filelist)
+        for file in filelist:
+            clin=client(host='localhost',port=10001,path=os.getcwd())
+            clin.connect()
+            clin.send(filenm=file)
+        Networking.set_directory(path=r'/home/shivam/Work/Projects/test/client/')
+        clin.sock.close()
