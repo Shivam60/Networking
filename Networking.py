@@ -7,7 +7,12 @@ finally:
     pass
 
 #open the file to send.
-def openf(path,filenm): 
+def fromdisk(path,filenm): 
+    a=open(os.getcwd()+'/1.mp4','rb')
+    b=a.read()
+    a.close()
+    return b
+    '''
     nf=True
     path=path+filenm
     try:
@@ -25,6 +30,7 @@ def openf(path,filenm):
             infile.close()
             logging.info("Closing File")
             return stuff
+    '''
 #returns serialized item passed in as a parameter
 def tobytes(stuff):
     nf =True
@@ -89,13 +95,14 @@ def find_crc_fno(data):
     logging.info('Data decoded for CRC and File Numbers')
     return crc,file_no
 #write file to disk with a supplied name
-def write(stufft,name,dir):
+def todisk(stufft,name,dir):
     t=os.getcwd()
     os.chdir(dir)
+    print(os.listdir())
     nf=True
     logging.info("Attempt to write file")
     try:
-        with open(name,'wb') as outfile:
+        with open(name,'w') as outfile:
             outfile.write(stufft)
     except IOError as e:
         nf=False
@@ -104,20 +111,32 @@ def write(stufft,name,dir):
     finally:
         if nf:
             logging.info("File written :")
-            outfile.close()
             os.chdir(t)
         outfile.close()
-
 #to Split the file into small chunks
 def split(path,filenm,chunk='3M'):
     try:
         logging.info("Spliting the Files into %s parts: " %chunk)
         p=subprocess.run(['split','-b',chunk,filenm,path])
+        logging.info("Changing Directory: ")
+        t=os.getcwd()
+        os.chdir(path)
+        d={}
+        logging.info("Finding CRC for each splited file: ")        
+        for file in os.listdir():
+            p=subprocess.run(['cksum',file],stdout=subprocess.PIPE)
+            d[str(p.stdout)]=str(file)
     except subprocess.CalledProcessError as err:
         logging.error("Cannot Split the file. Program Exit.\n"+str(p))
         os._exit(0)
     finally:
         logging.info("Files split Succesfully")
+        logging.info("Chksum being written")
+        d=tobytes(stuff=a)
+        write(stufft=d,name='CRC.bytes',dir=os.getcwd())
+        logging.info("Chksum being written")
+        os.chdir(t)
+        logging.info("Changing Directory: ")
 #to calculate the number of files splited
 def file_n(dir):
     nf=True
