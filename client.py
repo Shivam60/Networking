@@ -286,9 +286,13 @@ class client():
         
         
 if __name__=="__main__":
-    set_directory(path=r'/home/shivam/Work/Projects/test/client/')
+    localhost='localhost'
+    port=10001
+    client_directory=r'/home/shivam/Work/Projects/test/client'    
+
+    set_directory(path=client_directory)
     makedir('c_split')
-    clin=client(host='localhost',port=10001,path=os.getcwd())
+    clin=client(host=localhost,port=10001,path=os.getcwd())
     clin.stuff=fromdisk(os.getcwd(),filenm='/1.mp4')
     clin.stuff=tobytes(clin.stuff)
     todisk(stufft=clin.stuff,name='1.bytes',dir=os.getcwd())
@@ -299,16 +303,15 @@ if __name__=="__main__":
         set_directory(os.getcwd()+r'/c_split/')
         time.sleep(1)
         filelist=sorted(os.listdir())
-#        print(filelist)
         for file in filelist:
-            clin=client(host='localhost',port=10001,path=os.getcwd())
+            clin=client(host=localhost,port=port,path=os.getcwd())
             clin.connect()
             clin.send(filenm=file)
         clin.sock.close()
         logging.info('Splited Files Deleted')
         for files in os.listdir():
             p=subprocess.run(['rm',files])        
-        set_directory(path=r'/home/shivam/Work/Projects/test/client/')
+        set_directory(path=client_directory)
         logging.info('Byte Converted File Deleted')
         p=subprocess.call(['rm','1.bytes'])
 

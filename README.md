@@ -1,19 +1,35 @@
 # Networking
 
-It is a simple library which can be used to transfer files between two system over network such as hotspot
-The work is on going and the present speed that the library gives is around 2.5-3 MBPS over a 2.4/5Ghz wifi hotspot.
-Future work is to form a 
+It is a simple library which can be used to transfer files between two system over network such as wifi hotspot.
+The work is on going and the present speed that the library gives is around 2.5-3 MBPS over a 2.4Ghz/5Ghz wifi hotspot. 
+
 ## Getting Started
+Make sure python is installed
 
 ### Prerequisites
 
 Nothing as of now. All libraries are pre installed in python 3.
 
 ### Installing
-For now just download the zip file and run the client to create client connection by modifying the ip addres and port in client. 
-Same to be done in Server address too.
-put the file to be sent in the current directory and change the file name in client side.   
 
+In the following order:
+-> on node which has to download
+
+--> make a folder with server
+--> open server.py
+--> modify the localhost to your ip address, port number to any free port
+--> serv_directory with value of server folder path (inside quotes)
+
+run server.py
+
+-> on node which has to upload
+
+--> make a folder with client
+--> open client.py
+--> modify the localhost to server ip address, port number to any free port
+--> client_directory with value of server folder path (inside quotes)
+
+run client.py 
 
 ## Running the tests
 
@@ -23,11 +39,11 @@ sample test cases will be updated soon.
 
 ## Versioning
 
+1.0.0
 
 ## Authors
 
 Shivam Chawla
-
 
 ## License
 

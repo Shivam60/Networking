@@ -295,13 +295,16 @@ class server():
         conn.send((self.crc+'/\\'+str(self.file_no)+'/\\'+self.crc_list+'/\\'+passw).encode('utf-8'))
         logging.info("Handshake back sent")
 if __name__=="__main__":
-#    192.168.43.9
-    set_directory(path=r'/home/shivam/Work/Projects/test/server/')
+    localhost='localhost'
+    port=10001
+    sever_directory=r'/home/shivam/Work/Projects/test/server'
+    
+    set_directory(path=sever_directory)
     makedir('s_split')
-    serv=server(host='localhost',port=10001,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
+    serv=server(host=localhost,port=port,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
     serv.handshake()
     serv.start()
-    set_directory(path=r'/home/shivam/Work/Projects/test/server/s_split')
+    set_directory(path=sever_directory+r'/s_split')
     d={}
     logging.info('Finding CRC file.')
     for file in os.listdir():
@@ -327,14 +330,14 @@ if __name__=="__main__":
             j=j+1
     if j==1:
         logging.info("One File is deleted. Everything Ok. ")
-    join(path=r'/home/shivam/Work/Projects/test/server/s_split')
+    else:
+        logging.info("More Files delete. Everything Not Ok.")
+    join(path=sever_directory+r'/s_split')
     logging.info("Move dowaloaded.bytes to server directory")
-    p=subprocess.run(['mv','downloaded.bytes',r'/home/shivam/Work/Projects/test/server/'])  
+    p=subprocess.run(['mv','downloaded.bytes',sever_directory])  
     logging.info('Splited Files Deleted')
-    for files in os.listdir():
-        p=subprocess.run(['rm',files]) 
     logging.info("Changing Directory to server")
-    set_directory(path=r'/home/shivam/Work/Projects/test/server/')
+    set_directory(path=sever_directory)
     final_stuff=frombytes(pstuff=fromdisk(path=os.getcwd(),filenm='downloaded.bytes'))
     logging.info("Writting The file as send.")
     todisk(stufft=final_stuff,dir=os.getcwd(),name='download.mp4')
@@ -342,4 +345,6 @@ if __name__=="__main__":
     p=subprocess.run(['rm','downloaded.bytes'])
     if str(p.stdout)==serv.crc:
         logging.info("Files Downloaded Succesfully./nRemoving all the files ")
-        
+    set_directory(path=sever_directory+r'/s_split')
+    for files in os.listdir():
+        p=subprocess.run(['rm',files])
