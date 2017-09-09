@@ -190,7 +190,7 @@ def find_crc_fno(data):
 #to set the current working directory
 def set_directory(path):
     try:
-        logging.info("Chaning the Directory: ")
+        logging.info("Changing the Directory: ")
         os.chdir(path)
         logging.info("Directory Changed: ")
     except:
@@ -206,15 +206,17 @@ def makedir(dir):
     finally:
         logging.info("Directory made succesfully")
 def join(path):
-    os.chdir(path)
-    try:
-        logging.info("Joining the Files ")
-        p=subprocess.run(['cat','x*','recv_data'])
-    except subprocess.CalledProcessError as err:
-        logging.error("Cannot Join the file. Program Exit.\n"+str(p))
-        os._exit(0)
-    finally:
-        logging.info("Files Joined Succesfully")    
+    t=os.getcwd()
+    os.chdir(os.getcwd()+r'/c_split')
+    ain=b''
+    for file in sorted(os.listdir()):
+        f=open(file,'rb')
+        main+=f.read()
+        f.close()
+    f=open('main.bytes','wb')
+    f.write(main)
+    f.close()
+    os.chdir(t)    
 
 class client():
     def __init__(self,host,port,path,packetsize=65536):
@@ -304,7 +306,8 @@ if __name__=="__main__":
             clin.send(filenm=file)
         clin.sock.close()
         logging.info('Splited Files Deleted')
-        p=subprocess.call("rm *".split(' '))        
+        for files in os.listdir():
+            p=subprocess.run(['rm',files])        
         set_directory(path=r'/home/shivam/Work/Projects/test/client/')
         logging.info('Byte Converted File Deleted')
         p=subprocess.call(['rm','1.bytes'])

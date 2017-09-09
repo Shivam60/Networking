@@ -181,7 +181,7 @@ def find_crc_fno(data):
 #to set the current working directory
 def set_directory(path):
     try:
-        logging.info("Chaning the Directory: ")
+        logging.info("Changing the Directory: ")
         os.chdir(path)
         logging.info("Directory Changed: ")
     except:
@@ -207,8 +207,25 @@ def join(path):
     finally:
         logging.info("Files Joined Succesfully")    
 
-
-
+def join(path):
+    t=os.getcwd()
+    os.chdir(path)
+    try:
+        logging.info("Joining the Files ")
+        main=b''
+        for file in sorted(os.listdir()):
+            f=open(file,'rb')
+            main+=f.read()
+            f.close()
+    except :
+        logging.error("Cannot Join the file. Program Exit.\n"+str(p))
+        os._exit(0)
+    finally:
+        logging.info("Files Joined Succesfully")
+        os.chdir(t) 
+        f=open('downloaded.bytes','wb')
+        f.write(main)
+        f.close()
 class server():
     def __init__(self,host,port,packetsize,path,filenm):
         logging.info("Initalizing Attributes")
@@ -296,7 +313,6 @@ if __name__=="__main__":
     for file in os.listdir():
         p=subprocess.run(['md5sum',file],stdout=subprocess.PIPE)
         d[str(p.stdout.decode('utf-8').split()[0])]=str(file)
-#    crc_bytes=frombytes(pstuff=fromdisk(filenm=str(d[serv.crc_list]),path=os.getcwd()))
     logging.info('Renaming All recieved Files')
     l=[]
     for i in d:
@@ -310,18 +326,20 @@ if __name__=="__main__":
             p=subprocess.run(['rm',files])
             j=j+1
     if j==1:
-        logging.info("One File is deleted.")
-    logging.info("combining all files")
-#    p=subprocess.run(['cat','*','\>',main.bytes'])
+        logging.info("One File is deleted. Everything Ok. ")
+    join(path=r'/home/shivam/Work/Projects/test/server/s_split')
     logging.info("Move dowaloaded.bytes to server directory")
-    input()
     p=subprocess.run(['mv','downloaded.bytes',r'/home/shivam/Work/Projects/test/server/'])  
-    logging.info("changing Directory to server")
+    logging.info('Splited Files Deleted')
+    for files in os.listdir():
+        p=subprocess.run(['rm',files]) 
+    logging.info("Changing Directory to server")
     set_directory(path=r'/home/shivam/Work/Projects/test/server/')
     final_stuff=frombytes(pstuff=fromdisk(path=os.getcwd(),filenm='downloaded.bytes'))
     logging.info("Writting The file as send.")
     todisk(stufft=final_stuff,dir=os.getcwd(),name='download.mp4')
-    p=process.run(['md5sum','download..mp4'],stdout=subprocess.PIPE)
+    p=subprocess.run(['md5sum','download.mp4'],stdout=subprocess.PIPE)
+    p=subprocess.run(['rm','downloaded.bytes'])
     if str(p.stdout)==serv.crc:
         logging.info("Files Downloaded Succesfully./nRemoving all the files ")
         
