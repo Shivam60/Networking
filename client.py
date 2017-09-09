@@ -304,10 +304,8 @@ if __name__=="__main__":
             clin.send(filenm=file)
         clin.sock.close()
         logging.info('Splited Files Deleted')
-        for file in filelist:
-            p=subprocess.call(['rm',file])
-        
-    set_directory(path=r'/home/shivam/Work/Projects/test/client/')
-    logging.info('Byte Converted File Deleted')
-    p=subprocess.call(['rm','1.bytes'])
+        p=subprocess.call("rm *".split(' '))        
+        set_directory(path=r'/home/shivam/Work/Projects/test/client/')
+        logging.info('Byte Converted File Deleted')
+        p=subprocess.call(['rm','1.bytes'])
 

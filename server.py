@@ -91,14 +91,7 @@ def sz(stuff):
     	finally:
     		if nf:
     			logging.info("Deompressed Size is: "+str(self.sz())+"MB")
-def find_crc_fno(data):
-    logging.info('Decoding data for CRC and File Numbers')
-    data=data.decode('utf-8').split('/\\')
-    file_no=int(data[1])
-    data=data[0].split(' ')
-    crc=data[0]+' '+data[1]
-    logging.info('Data decoded for CRC and File Numbers')
-    return crc,file_no
+
 #write file to disk with a supplied name
 def todisk(stufft,name,dir):
     t=os.getcwd()
@@ -305,9 +298,30 @@ if __name__=="__main__":
         d[str(p.stdout.decode('utf-8').split()[0])]=str(file)
 #    crc_bytes=frombytes(pstuff=fromdisk(filenm=str(d[serv.crc_list]),path=os.getcwd()))
     logging.info('Renaming All recieved Files')
+    l=[]
     for i in d:
-        if i==str(serv.crc_list):
-            p=subprocess.call(['rm',d[i]])
         if i in crc_bytes:
             p=subprocess.run(['mv',d[i],crc_bytes[i]])
-    
+            l.append(crc_bytes[i])
+    j=0
+    logging.info('removing one file')
+    for files in os.listdir():
+        if files not in l:
+            p=subprocess.run(['rm',files])
+            j=j+1
+    if j==1:
+        logging.info("One File is deleted.")
+    logging.info("combining all files")
+#    p=subprocess.run(['cat','*','\>',main.bytes'])
+    logging.info("Move dowaloaded.bytes to server directory")
+    input()
+    p=subprocess.run(['mv','downloaded.bytes',r'/home/shivam/Work/Projects/test/server/'])  
+    logging.info("changing Directory to server")
+    set_directory(path=r'/home/shivam/Work/Projects/test/server/')
+    final_stuff=frombytes(pstuff=fromdisk(path=os.getcwd(),filenm='downloaded.bytes'))
+    logging.info("Writting The file as send.")
+    todisk(stufft=final_stuff,dir=os.getcwd(),name='download.mp4')
+    p=process.run(['md5sum','download..mp4'],stdout=subprocess.PIPE)
+    if str(p.stdout)==serv.crc:
+        logging.info("Files Downloaded Succesfully./nRemoving all the files ")
+        
