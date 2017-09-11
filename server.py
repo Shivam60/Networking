@@ -196,16 +196,7 @@ def makedir(dir):
         os._exit(0)
     finally:
         logging.info("Directory made succesfully")
-def join(path):
-    os.chdir(path)
-    try:
-        logging.info("Joining the Files ")
-        p=subprocess.run(['cat','x*','recv_data'])
-    except subprocess.CalledProcessError as err:
-        logging.error("Cannot Join the file. Program Exit.\n"+str(p))
-        os._exit(0)
-    finally:
-        logging.info("Files Joined Succesfully")    
+  
 
 def join(path):
     t=os.getcwd()
@@ -226,8 +217,57 @@ def join(path):
         f=open('downloaded.bytes','wb')
         f.write(main)
         f.close()
+def server_after_connection(serv):
+    set_directory(path=serv.server_split_directory)
+    d={}
+    logging.info('Finding CRC file.')
+    for file in os.listdir():
+        p=subprocess.run(['cksum',file],stdout=subprocess.PIPE)
+        d[str(p.stdout.decode('utf-8').split()[0])+' '+str(p.stdout.decode('utf-8').split()[1])]=str(file)
+    
+    logging.info('Finding contents from CRC file.')
+    crc_bytes=frombytes(pstuff=fromdisk(filenm=str(d[serv.crc_list]),path=os.getcwd()))
+
+    d={}
+    for file in os.listdir():
+        p=subprocess.run(['md5sum',file],stdout=subprocess.PIPE)
+        d[str(p.stdout.decode('utf-8').split()[0])]=str(file)
+    logging.info('Renaming All recieved Files')
+    
+    l=[]
+    for i in d:
+        if i in crc_bytes:
+            p=subprocess.run(['mv',d[i],crc_bytes[i]])
+            l.append(crc_bytes[i])
+    
+    j=0
+    for files in os.listdir():
+        if files not in l:
+            p=subprocess.run(['rm',files])
+            j=j+1
+    if j!=1:
+        logging.info("Everything Not Ok. All parts were not recieved.")
+
+    join(path=serv.server_split_directory)
+    logging.info("Move dowaloaded.bytes to server directory")
+    p=subprocess.run(['mv','downloaded.bytes',serv.server_directory])  
+    logging.info('Splited Files Deleted')
+    logging.info("Changing Directory to server")
+    set_directory(path=serv.server_directory)
+    
+    final_stuff=frombytes(pstuff=fromdisk(path=os.getcwd(),filenm='downloaded.bytes'))
+    todisk(stufft=final_stuff,dir=os.getcwd(),name='download.mp4')
+    
+    p=subprocess.run(['md5sum','download.mp4'],stdout=subprocess.PIPE)
+    p=subprocess.run(['rm','downloaded.bytes'])
+    
+    if str(p.stdout)==serv.crc:
+        logging.info("Files Downloaded Succesfully./nRemoving all the files ")
+    set_directory(path=serv.server_split_directory)
+    for files in os.listdir():
+        p=subprocess.run(['rm',files])
 class server():
-    def __init__(self,host,port,packetsize,path,filenm):
+    def __init__(self,host,port,packetsize,server_split_directory,server_directory):
         logging.info("Initalizing Attributes")
         logging.info("Checking if host and port are available: ")        
         self.host=host
@@ -236,6 +276,10 @@ class server():
         self.recvstuff=None
         self.file_no=1
         self.crc_list=None
+        self.server_directory=server_directory
+        self.server_split_directory=server_split_directory
+        set_directory(path=self.server_directory)
+        makedir('s_split')
         #creating a socket with IP4 config and TCP stream protocol
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -297,54 +341,11 @@ class server():
 if __name__=="__main__":
     localhost='localhost'
     port=10001
-    sever_directory=r'/home/shivam/Work/Projects/test/server'
+    server_directory=r'/home/shivam/Work/Projects/test/server'
+    server_split_directory=server_directory+r'/s_split'
     
-    set_directory(path=sever_directory)
-    makedir('s_split')
-    serv=server(host=localhost,port=port,packetsize=65536,path=os.getcwd(),filenm='s.bytes')
+    serv=server(host=localhost,port=port,packetsize=65536,server_directory=server_directory,server_split_directory=server_split_directory)
     serv.handshake()
     serv.start()
-    set_directory(path=sever_directory+r'/s_split')
-    d={}
-    logging.info('Finding CRC file.')
-    for file in os.listdir():
-        p=subprocess.run(['cksum',file],stdout=subprocess.PIPE)
-        d[str(p.stdout.decode('utf-8').split()[0])+' '+str(p.stdout.decode('utf-8').split()[1])]=str(file)
-    logging.info('Finding contents from CRC file.')
-    crc_bytes=frombytes(pstuff=fromdisk(filenm=str(d[serv.crc_list]),path=os.getcwd()))
-    d={}
-    for file in os.listdir():
-        p=subprocess.run(['md5sum',file],stdout=subprocess.PIPE)
-        d[str(p.stdout.decode('utf-8').split()[0])]=str(file)
-    logging.info('Renaming All recieved Files')
-    l=[]
-    for i in d:
-        if i in crc_bytes:
-            p=subprocess.run(['mv',d[i],crc_bytes[i]])
-            l.append(crc_bytes[i])
-    j=0
-    logging.info('removing one file')
-    for files in os.listdir():
-        if files not in l:
-            p=subprocess.run(['rm',files])
-            j=j+1
-    if j==1:
-        logging.info("One File is deleted. Everything Ok. ")
-    else:
-        logging.info("More Files delete. Everything Not Ok.")
-    join(path=sever_directory+r'/s_split')
-    logging.info("Move dowaloaded.bytes to server directory")
-    p=subprocess.run(['mv','downloaded.bytes',sever_directory])  
-    logging.info('Splited Files Deleted')
-    logging.info("Changing Directory to server")
-    set_directory(path=sever_directory)
-    final_stuff=frombytes(pstuff=fromdisk(path=os.getcwd(),filenm='downloaded.bytes'))
-    logging.info("Writting The file as send.")
-    todisk(stufft=final_stuff,dir=os.getcwd(),name='download.mp4')
-    p=subprocess.run(['md5sum','download.mp4'],stdout=subprocess.PIPE)
-    p=subprocess.run(['rm','downloaded.bytes'])
-    if str(p.stdout)==serv.crc:
-        logging.info("Files Downloaded Succesfully./nRemoving all the files ")
-    set_directory(path=sever_directory+r'/s_split')
-    for files in os.listdir():
-        p=subprocess.run(['rm',files])
+    
+    server_after_connection(serv)

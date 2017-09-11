@@ -217,9 +217,15 @@ def join(path):
     f.write(main)
     f.close()
     os.chdir(t)    
-
+def client_clean():
+    logging.info('Splited Files Deleted')
+    for files in os.listdir():
+        p=subprocess.run(['rm',files])        
+    set_directory(path=client_directory)
+    logging.info('Byte Converted File Deleted')
+    p=subprocess.call(['rm','1.bytes'])
 class client():
-    def __init__(self,host,port,path,packetsize=65536):
+    def __init__(self,host,port,client_directory,client_split_directory,packetsize=65536):
         self.host=host
         self.port=port
         self.packetsize=packetsize
@@ -227,6 +233,8 @@ class client():
         self.fileinfo={}
         self.crc=None
         self.crc_list=None
+        self.client_split_directory=client_split_directory
+        self.client_directory=client_directory
     def connect(self):
         nf=False
         try:
@@ -289,29 +297,27 @@ if __name__=="__main__":
     localhost='localhost'
     port=10001
     client_directory=r'/home/shivam/Work/Projects/test/client'    
+    client_split_directory=client_directory+r'/c_split/'
 
     set_directory(path=client_directory)
     makedir('c_split')
-    clin=client(host=localhost,port=10001,path=os.getcwd())
+    
+    clin=client(host=localhost,port=10001,client_split_directory=client_split_directory,client_directory=client_directory)
     clin.stuff=fromdisk(os.getcwd(),filenm='/1.mp4')
     clin.stuff=tobytes(clin.stuff)
     todisk(stufft=clin.stuff,name='1.bytes',dir=os.getcwd())
     clin.crc=crc_n(filenm='1.bytes')
-    clin.crc_list=split(path=os.getcwd()+'/c_split/',filenm='1.bytes',chunk='3m')
-    clin.file_no= file_n(dir=os.getcwd()+r'/c_split/')
+    clin.crc_list=split(path=clin.client_split_directory,filenm='1.bytes',chunk='3m')
+    clin.file_no= file_n(dir=clin.client_split_directory)
+    
     if clin.handshake():
-        set_directory(os.getcwd()+r'/c_split/')
+        set_directory(clin.client_split_directory)
         time.sleep(1)
         filelist=sorted(os.listdir())
         for file in filelist:
-            clin=client(host=localhost,port=port,path=os.getcwd())
+            clin=client(host=localhost,port=port,client_split_directory=client_split_directory,client_directory=client_directory)
             clin.connect()
             clin.send(filenm=file)
         clin.sock.close()
-        logging.info('Splited Files Deleted')
-        for files in os.listdir():
-            p=subprocess.run(['rm',files])        
-        set_directory(path=client_directory)
-        logging.info('Byte Converted File Deleted')
-        p=subprocess.call(['rm','1.bytes'])
+        client_clean()
 
