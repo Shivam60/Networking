@@ -243,6 +243,11 @@ class client():
         clin.crc_list=split(path=self.split_directory,filenm=self.filenm+'.bytes',chunk='60m')
         clin.file_no= file_n(dir=self.split_directory)
     def end(self):
+        set_directory(self.split_directory)
+        for file in os.listdir():
+            clin1=client(host=self.host,port=self.port,filenm=str(file))
+            clin1.connect()
+            clin1.send(filenm=file)
         logging.info('Splited Files Deleted')
         set_directory(path=self.client_directory)
         p=subprocess.run(['rm','-r','c_split'])
@@ -297,15 +302,12 @@ class client():
         logging.info("Handshake reply recieved.")   
         self.sock.close()       
         if crc==self.crc and file_no==self.file_no:
-            logging.info("Handshake Complete./nSecret Key Matched")
-            return True
+            logging.info("Handshake Complete.\nSecret Key Matched")
+            self.end()
         else:
             logging.info("Handshake Incomplete")
             logging.info("Recieved: \nCRC: "+str(crc)+"\nFile Numbers: "+str(fno))
-            logging.info("Actual: \nCRC: "+str(self.crc)+"\nFile Numbers: "+str(self.file_no))
-            return False
-        
-        
+            logging.info("Actual: \nCRC: "+str(self.crc)+"\nFile Numbers: "+str(self.file_no))        
 if __name__=="__main__":
     
     localhost='localhost'
@@ -314,13 +316,7 @@ if __name__=="__main__":
     secret='shivam'
     filenm='1.mp4'
 
-    clin=client(host=localhost,port=10001,filenm=filenm)    
+    clin=client(host=localhost,port=10001,filenm=filenm)
     clin.begin(client_directory=client_directory)
 
-    if clin.handshake(secret):
-        set_directory(clin.split_directory)
-        for file in os.listdir():
-            clin1=client(host=localhost,port=port,filenm=str(file))
-            clin1.connect()
-            clin1.send(filenm=file)
-        clin.end()
+    clin.handshake(secret)
