@@ -91,7 +91,16 @@ def sz(stuff):
     	finally:
     		if nf:
     			logging.info("Deompressed Size is: "+str(self.sz())+"MB")
-
+#to find crc and file number from handhsake
+def find_crc_fno(data):
+    logging.info('Decoding data for CRC and File Numbers')
+    data=data.decode('utf-8').split('/\\')
+    crc_list=data[2]
+    passwo=data[3]
+    file_no=int(data[1])
+    crc=data[0]
+    logging.info('Data decoded for CRC and File Numbers')
+    return crc,file_no,crc_list,passwo
 #write file to disk with a supplied name
 def todisk(stufft,name,dir):
     t=os.getcwd()
@@ -167,16 +176,7 @@ def crc_n(filenm):
         op=p.decode('utf-8').split(' ')
         op=op[0]+' '+op[1]
         return ''.join(op)
-#to find crc and file number from handhsake
-def find_crc_fno(data):
-    logging.info('Decoding data for CRC and File Numbers')
-    data=data.decode('utf-8').split('/\\')
-    crc_list=data[2]
-    passwo=data[3]
-    file_no=int(data[1])
-    crc=data[0]
-    logging.info('Data decoded for CRC and File Numbers')
-    return crc,file_no,crc_list,passwo
+
 
 #to set the current working directory
 def set_directory(path):

@@ -89,14 +89,7 @@ def sz(stuff):
     	finally:
     		if nf:
     			logging.info("Deompressed Size is: "+str(self.sz())+"MB")
-def find_crc_fno(data):
-    logging.info('Decoding data for CRC and File Numbers')
-    data=data.decode('utf-8').split('/\\')
-    file_no=int(data[1])
-    data=data[0].split(' ')
-    crc=data[0]+' '+data[1]
-    logging.info('Data decoded for CRC and File Numbers')
-    return crc,file_no
+
 #write file to disk with a supplied name
 def todisk(stufft,name,dir):
     t=os.getcwd()
@@ -205,18 +198,25 @@ def makedir(dir):
         os._exit(0)
     finally:
         logging.info("Directory made succesfully")
-def join(path):
+def join(path,nm):
     t=os.getcwd()
-    os.chdir(os.getcwd()+r'/c_split')
-    ain=b''
-    for file in sorted(os.listdir()):
-        f=open(file,'rb')
-        main+=f.read()
-        f.close()
-    f=open('main.bytes','wb')
-    f.write(main)
-    f.close()
-    os.chdir(t)    
+    os.chdir(path)
+    try:
+        logging.info("Joining the Files ")
+        main=b''
+        for file in sorted(os.listdir()):
+            f=open(file,'rb')
+            main+=f.read()
+            f.close()
+    except :
+        logging.error("Cannot Join the file. Program Exit.\n"+str(p))
+        os._exit(0)
+    finally:
+        logging.info("Files Joined Succesfully")
+        os.chdir(t) 
+        f=open(nm,'wb')
+        f.write(main)
+        f.close()  
 
 class client():
     def __init__(self,host,port,filenm,packetsize=65536):
