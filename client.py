@@ -125,7 +125,7 @@ def split(path,filenm,chunk='3M'):
         t=os.getcwd()
         os.chdir(path)
         d={}
-        logging.info("Finding CRC for each splited file: ")        
+        logging.info("Finding md5sum for each splited file: ")        
         for file in os.listdir():
             p=subprocess.run(['md5sum',file],stdout=subprocess.PIPE)
             d[str(p.stdout.decode('utf-8').split()[0])]=str(file)
@@ -136,7 +136,7 @@ def split(path,filenm,chunk='3M'):
     finally:
         if nf:
             logging.info("Files split Succesfully")
-            logging.info("Chksum being written")
+            logging.info("md5sum being written")
             d=tobytes(stuff=d)
             todisk(stufft=d,name='CRC',dir=os.getcwd())
             crc_list=crc_n('CRC')
@@ -219,14 +219,35 @@ def join(path):
     os.chdir(t)    
 
 class client():
-    def __init__(self,host,port,path,packetsize=65536):
+    def __init__(self,host,port,filenm,packetsize=65536):
         self.host=host
         self.port=port
         self.packetsize=packetsize
         self.sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.fileinfo={}
+        self.secret=None
         self.crc=None
         self.crc_list=None
+        self.filenm=filenm
+        self.client_directory=None
+        self.split_directory=None
+    def begin(self,client_directory):
+        self.client_directory=client_directory
+        self.split_directory=client_directory+r'c_split/'
+        set_directory(path=self.client_directory)
+        makedir('c_split')
+        clin.stuff=fromdisk(self.client_directory,filenm=self.filenm)
+        clin.stuff=tobytes(self.stuff)
+        todisk(stufft=self.stuff,name=self.filenm+'.bytes',dir=self.client_directory)
+        clin.crc=crc_n(filenm=self.filenm)
+        clin.crc_list=split(path=self.split_directory,filenm=self.filenm+'.bytes',chunk='60m')
+        clin.file_no= file_n(dir=self.split_directory)
+    def end(self):
+        logging.info('Splited Files Deleted')
+        set_directory(path=self.client_directory)
+        p=subprocess.run(['rm','-r','c_split'])
+        logging.info('Byte Converted File Deleted')
+        p=subprocess.call(['rm',self.filenm+'.bytes'])
     def connect(self):
         nf=False
         try:
@@ -263,20 +284,20 @@ class client():
         logging.info("Sending Speed: "+str((sys.getsizeof(data)/1024**2)/(et-st))+" MBPS")
         logging.info("Closing Socket")
         self.sock.close()
-    def handshake(self):
+    def handshake(self,secret):
+        self.secret=secret
         logging.info("Connecting...")
         self.connect()
-        key=input("Enter Secret Key: ")
         logging.info("Sending CRC's and number of files to server along with authentication")
-        self.sock.send((self.crc+'/\\'+str(self.file_no)+'/\\'+str(self.crc_list)+'/\\'+key).encode('utf-8'))
+        self.sock.send((self.crc+'/\\'+str(self.file_no)+'/\\'+str(self.crc_list)+'/\\'+self.secret).encode('utf-8'))
         logging.info("CRC and Number of files sent.")
         logging.info("Waiting for handshake reply.")
         data=self.sock.recv(1024)
         crc,file_no,crc_list,passw=find_crc_fno(data)
         logging.info("Handshake reply recieved.")   
-       # self.sock.close()       
+        self.sock.close()       
         if crc==self.crc and file_no==self.file_no:
-            logging.info("Handshake Complete.")
+            logging.info("Handshake Complete./nSecret Key Matched")
             return True
         else:
             logging.info("Handshake Incomplete")
@@ -286,32 +307,20 @@ class client():
         
         
 if __name__=="__main__":
+    
     localhost='localhost'
     port=10001
-    client_directory=r'/home/shivam/Work/Projects/test/client'    
+    client_directory=r'/home/shivam/Work/Projects/test/client/'    
+    secret='shivam'
+    filenm='1.mp4'
 
-    set_directory(path=client_directory)
-    makedir('c_split')
-    clin=client(host=localhost,port=10001,path=os.getcwd())
-    clin.stuff=fromdisk(os.getcwd(),filenm='/1.mp4')
-    clin.stuff=tobytes(clin.stuff)
-    todisk(stufft=clin.stuff,name='1.bytes',dir=os.getcwd())
-    clin.crc=crc_n(filenm='1.bytes')
-    clin.crc_list=split(path=os.getcwd()+'/c_split/',filenm='1.bytes',chunk='3m')
-    clin.file_no= file_n(dir=os.getcwd()+r'/c_split/')
-    if clin.handshake():
-        set_directory(os.getcwd()+r'/c_split/')
-        time.sleep(1)
-        filelist=sorted(os.listdir())
-        for file in filelist:
-            clin=client(host=localhost,port=port,path=os.getcwd())
-            clin.connect()
-            clin.send(filenm=file)
-        clin.sock.close()
-        logging.info('Splited Files Deleted')
-        for files in os.listdir():
-            p=subprocess.run(['rm',files])        
-        set_directory(path=client_directory)
-        logging.info('Byte Converted File Deleted')
-        p=subprocess.call(['rm','1.bytes'])
+    clin=client(host=localhost,port=10001,filenm=filenm)    
+    clin.begin(client_directory=client_directory)
 
+    if clin.handshake(secret):
+        set_directory(clin.split_directory)
+        for file in os.listdir():
+            clin1=client(host=localhost,port=port,filenm=str(file))
+            clin1.connect()
+            clin1.send(filenm=file)
+        clin.end()
