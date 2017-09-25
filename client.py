@@ -200,6 +200,7 @@ def makedir(dir):
         logging.info("Directory made succesfully")
 def join(path,nm):
     t=os.getcwd()
+<<<<<<< HEAD
     os.chdir(path)
     try:
         logging.info("Joining the Files ")
@@ -220,6 +221,27 @@ def join(path,nm):
 
 class client():
     def __init__(self,host,port,filenm,packetsize=65536):
+=======
+    os.chdir(os.getcwd()+r'/c_split')
+    ain=b''
+    for file in sorted(os.listdir()):
+        f=open(file,'rb')
+        main+=f.read()
+        f.close()
+    f=open('main.bytes','wb')
+    f.write(main)
+    f.close()
+    os.chdir(t)    
+def client_clean():
+    logging.info('Splited Files Deleted')
+    for files in os.listdir():
+        p=subprocess.run(['rm',files])        
+    set_directory(path=client_directory)
+    logging.info('Byte Converted File Deleted')
+    p=subprocess.call(['rm','1.bytes'])
+class client():
+    def __init__(self,host,port,client_directory,client_split_directory,packetsize=65536):
+>>>>>>> 5b2d26fd892bcf3808fba85bf090cc8be83938da
         self.host=host
         self.port=port
         self.packetsize=packetsize
@@ -228,6 +250,7 @@ class client():
         self.secret=None
         self.crc=None
         self.crc_list=None
+<<<<<<< HEAD
         self.filenm=filenm
         self.client_directory=None
         self.split_directory=None
@@ -253,6 +276,10 @@ class client():
         p=subprocess.run(['rm','-r','c_split'])
         logging.info('Byte Converted File Deleted')
         p=subprocess.call(['rm',self.filenm+'.bytes'])
+=======
+        self.client_split_directory=client_split_directory
+        self.client_directory=client_directory
+>>>>>>> 5b2d26fd892bcf3808fba85bf090cc8be83938da
     def connect(self):
         nf=False
         try:
@@ -312,11 +339,38 @@ if __name__=="__main__":
     
     localhost='localhost'
     port=10001
+<<<<<<< HEAD
     client_directory=r'/home/shivam/Work/Projects/test/client/'    
     secret='shivam'
     filenm='1.mp4'
 
     clin=client(host=localhost,port=10001,filenm=filenm)
     clin.begin(client_directory=client_directory)
+=======
+    client_directory=r'/home/shivam/Work/Projects/test/client'    
+    client_split_directory=client_directory+r'/c_split/'
+
+    set_directory(path=client_directory)
+    makedir('c_split')
+    
+    clin=client(host=localhost,port=10001,client_split_directory=client_split_directory,client_directory=client_directory)
+    clin.stuff=fromdisk(os.getcwd(),filenm='/1.mp4')
+    clin.stuff=tobytes(clin.stuff)
+    todisk(stufft=clin.stuff,name='1.bytes',dir=os.getcwd())
+    clin.crc=crc_n(filenm='1.bytes')
+    clin.crc_list=split(path=clin.client_split_directory,filenm='1.bytes',chunk='3m')
+    clin.file_no= file_n(dir=clin.client_split_directory)
+    
+    if clin.handshake():
+        set_directory(clin.client_split_directory)
+        time.sleep(1)
+        filelist=sorted(os.listdir())
+        for file in filelist:
+            clin=client(host=localhost,port=port,client_split_directory=client_split_directory,client_directory=client_directory)
+            clin.connect()
+            clin.send(filenm=file)
+        clin.sock.close()
+        client_clean()
+>>>>>>> 5b2d26fd892bcf3808fba85bf090cc8be83938da
 
     clin.handshake(secret)

@@ -14,22 +14,25 @@ Nothing as of now. All libraries are pre installed in python 3.
 
 In the following order:
 -> on node which has to download
-
+ 
 --> make a folder with server
---> open server.py
+--> open downloader.py
 --> modify the localhost to your ip address, port number to any free port
 --> serv_directory with value of server folder path (inside quotes)
-
-run server.py
+--> secret is your password
+--> filenm the file which u want to download along with extension 
+run downloader.py
 
 -> on node which has to upload
 
 --> make a folder with client
---> open client.py
+--> open uploader.py
 --> modify the localhost to server ip address, port number to any free port
 --> client_directory with value of server folder path (inside quotes)
+--> secret is your password
+--> filenm the file which u want to upload along with extension 
 
-run client.py 
+run uploader.py 
 
 ## Running the tests
 
